@@ -21,9 +21,21 @@
     <ClCompile Include="GreetingProvider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="IPinState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PinStateMock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GreetingProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IPinState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PinStateMock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
