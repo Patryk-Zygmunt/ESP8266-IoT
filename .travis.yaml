@@ -7,3 +7,7 @@ install:
   - ./build.sh
 script:
   - ./build/runtest
+branches:
+  only:
+  - master
+  - feature/pin-state
