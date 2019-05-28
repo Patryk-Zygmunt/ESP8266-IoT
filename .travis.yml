@@ -11,3 +11,5 @@ branches:
   only:
   - master
   - feature/pin-state
+before_install:
+  - chmod +x build.sh
