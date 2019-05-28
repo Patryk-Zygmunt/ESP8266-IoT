@@ -2,8 +2,8 @@
 
 DIR="$( cd "/Project1UnitTests/$( dirname "$0" )" && pwd )"
 
-rm -rf $DIR/build
-mkdir $DIR/build
-cd $DIR/build
-cmake ..
-make
+sudo rm -rf $DIR/build
+sudo mkdir $DIR/build
+sudo cd $DIR/build
+sudo cmake ..
+sudo make
