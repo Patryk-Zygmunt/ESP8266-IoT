@@ -9,6 +9,7 @@
 #include <ESP8266WebServerSecure.h>
 #include <ESP8266WebServer.h>
 #include <dummy.h>
+#include <Alarm.h>
 #include <WiFiUdp.h>
 #include <WiFiServerSecureBearSSL.h>
 #include <WiFiServerSecureAxTLS.h>
@@ -88,6 +89,7 @@ void setup(void) {
 	server.on("/", HTTP_GET, handleRoot);        // Call the 'handleRoot' function when a client requests URI "/"
 	//server.on("/login", HTTP_POST, handleLogin); // Call the 'handleLogin' function when a POST request is made to URI "/login"
 	server.on("/LED", HTTP_POST, handleLED);  // Call the 'handleLED' function when a POST request is made to URI "/LED"
+	server.on("/alarm", HTTP_GET, handleAlarm);
 	server.onNotFound(handleNotFound);           // When a client requests an unknown URI (i.e. something other than "/"), call function "handleNotFound"
 
 	server.begin();                            // Actually start the server
@@ -106,6 +108,12 @@ void handleLED() {                          // If a POST request is made to URI 
 	digitalWrite(D0, !digitalRead(D0));      // Change the state of the LED
 	server.sendHeader("Location", "/");        // Add a header to respond with a new location for the browser to go to the home page again
 	server.send(303);                         // Send it back to the browser with an HTTP status 303 (See Other) to redirect
+}
+
+void handleAlarm() {
+	int sensorState = digitalRead(D0);
+	Alarm alarm; 
+	alarm.setAlarm(sensorState);
 }
 
 void handleLogin() {                         // If a POST request is made to URI /login
