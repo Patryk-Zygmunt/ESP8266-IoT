@@ -4,7 +4,7 @@ class LoginPageProvider {
 public:
 	std::string validUser = "user";
 	std::string validPassword = "pass";
-	std::string token = "000000";
+	std::string currentToken = "a231wda";
 
 	LoginPageProvider();
 	~LoginPageProvider();
