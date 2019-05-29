@@ -1,3 +1,4 @@
+#include "pins_arduino.h"
 #include <LEAmDNS_Priv.h>
 #include <LEAmDNS_lwIPdefs.h>
 #include <LEAmDNS.h>
@@ -51,7 +52,7 @@ void handleRoot();              // function prototypes for HTTP handlers
 void handleLogin();
 void handleNotFound();
 
-const int led = 2;
+//const int led = 2;
 
 void setup(void) {
 	Serial.begin(115200);         // Start the Serial communication to send messages to the computer
@@ -102,7 +103,7 @@ void handleRoot() {                         // When URI / is requested, send a w
 }
 
 void handleLED() {                          // If a POST request is made to URI /LED
-	digitalWrite(led, !digitalRead(led));      // Change the state of the LED
+	digitalWrite(D0, !digitalRead(D0));      // Change the state of the LED
 	server.sendHeader("Location", "/");        // Add a header to respond with a new location for the browser to go to the home page again
 	server.send(303);                         // Send it back to the browser with an HTTP status 303 (See Other) to redirect
 }
@@ -120,6 +121,7 @@ void handleLogin() {                         // If a POST request is made to URI
 		server.send(401, "text/plain", "401: Unauthorized");
 	}
 }
+
 
 void handleNotFound() {
 	server.send(404, "text/plain", "404: Not found"); // Send HTTP status 404 (Not Found) when there's no handler for the URI in the request
