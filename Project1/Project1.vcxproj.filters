@@ -26,5 +26,11 @@
     <ClInclude Include="GreetingProvider.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="__vm\.Project1.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Project1.ino" />
   </ItemGroup>
 </Project>
