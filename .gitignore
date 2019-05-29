@@ -403,3 +403,4 @@ MigrationBackup/
 
 .vs/
 *.tlog
+Debug/
