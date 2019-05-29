@@ -1,0 +1,9 @@
+﻿  pch.cpp
+  Project1UnitTests.cpp
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(12): error C2065: "LOW": niezadeklarowany identyfikator
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(13): error C2065: "D0": niezadeklarowany identyfikator
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(13): error C2065: "LOW": niezadeklarowany identyfikator
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(13): error C3861: "digitalWrite": identyfikatora nie odnaleziono
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(17): error C2065: "D0": niezadeklarowany identyfikator
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(17): error C2065: "HIGH": niezadeklarowany identyfikator
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(17): error C3861: "digitalWrite": identyfikatora nie odnaleziono
