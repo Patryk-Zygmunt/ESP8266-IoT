@@ -2,6 +2,9 @@
 #include "CppUnitTest.h"
 #include "../Project1/GreetingProvider.cpp"
 #include "../Project1/LoginPageProvider.cpp"
+#include <regex>
+#include <string>
+#include <iostream>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -20,9 +23,9 @@ public:
 		std::string pageContents = loginPageProvider.getLoginPageContents();
 		Assert::IsNotNull(&pageContents);
 		Assert::AreNotEqual(pageContents, std::string(""));
-		Assert::IsTrue(pageContents.find("<input type = 'text' name = 'login'"));
-		Assert::IsTrue(pageContents.find("<input type = 'password' name = 'password'"));
-		Assert::IsTrue(pageContents.find("<form action = '/doLogin'>"));
+		Assert::IsTrue(std::regex_match(pageContents, std::regex("^.*<input.*name.*login.*$")));
+		Assert::IsTrue(std::regex_match(pageContents, std::regex("^.*<input.*name.*password.*$")));
+		Assert::IsTrue(std::regex_match(pageContents, std::regex("^.*<form.*action.*/doLogin.*>.*$")));
 	}
 
 	TEST_METHOD(LoginPageAuthTest) {
@@ -51,6 +54,17 @@ public:
 		// invalid credentials
 		std::string invalidToken = loginPageProvider.validateUserData("asdf", "asvd");
 		Assert::IsFalse(loginPageProvider.isTokenValid(invalidToken));
+	}
+
+	TEST_METHOD(LoginResultPagesTest) {
+		LoginPageProvider loginPageProvider;
+		// invalid credentials
+		std::string invalidCredentialsPage = loginPageProvider.getInvalidCredentialsPage();
+		Assert::IsTrue(std::regex_match(invalidCredentialsPage, std::regex("^.*[Aa]ccess.*denied.*$")));
+
+		// logout button
+		std::string logoutButton = loginPageProvider.getLogoutButton();
+		Assert::IsTrue(std::regex_match(logoutButton, std::regex("<button.*Logout.*</button>")));
 	}
 	};
 }

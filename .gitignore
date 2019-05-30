@@ -404,3 +404,4 @@ MigrationBackup/
 .vs/
 *.tlog
 Debug/
+.vscode/

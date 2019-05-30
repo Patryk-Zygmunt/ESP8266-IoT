@@ -11,5 +11,7 @@ public:
 	std::string getLoginPageContents();
 	std::string validateUserData(std::string user, std::string password);
 	bool isTokenValid(std::string token);
+	std::string getInvalidCredentialsPage();
+	std::string getLogoutButton();
 };
 
