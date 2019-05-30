@@ -13,6 +13,8 @@ public:
 	Alarm();
 	~Alarm();
 	int setAlarm(int sensorState);
+	int turnOnAlarm();
+	int turnOffAlarm();
 };
 
 #endif

@@ -21,7 +21,7 @@
     <ClCompile Include="GreetingProvider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="pins_arduino.cpp">
+    <ClCompile Include="Alarm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +32,7 @@
     <ClInclude Include="__vm\.Project1.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pins_arduino.h">
+    <ClInclude Include="Alarm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
