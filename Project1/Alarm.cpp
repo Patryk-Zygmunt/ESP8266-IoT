@@ -19,4 +19,12 @@ int Alarm::setAlarm(int sensorState) {
 	}
 }
 
+int Alarm::turnOnAlarm() {
+	digitalWrite(D0, HIGH);
+	return 1;
+}
 
+int Alarm::turnOffAlarm() {
+	digitalWrite(D0, LOW);
+	return 0;
+}
