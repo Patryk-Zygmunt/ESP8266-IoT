@@ -21,6 +21,7 @@
     <ClCompile Include="GreetingProvider.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LoginPageProvider.cpp">
     <ClCompile Include="IPinState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -32,6 +33,7 @@
     <ClInclude Include="GreetingProvider.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="LoginPageProvider.h">
     <ClInclude Include="IPinState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
