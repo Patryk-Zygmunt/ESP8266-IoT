@@ -54,3 +54,7 @@ dkms.conf
 *.db
 *.db-shm
 *.db-wal
+.vscode/
+Debug/
+.vs
+.idea/vcs.xml
