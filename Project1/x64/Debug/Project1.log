@@ -1,0 +1,850 @@
+﻿  Alarm.cpp
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp : warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#define"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(16): warning C4005: "__ESP8266_esp8266__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „__ESP8266_esp8266__”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(17): warning C4005: "__ESP8266_ESP8266__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „__ESP8266_ESP8266__”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(18): warning C4005: "__ets__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „__ets__”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(19): warning C4005: "ICACHE_FLASH": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „ICACHE_FLASH”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(22): warning C4005: "LWIP_OPEN_SRC": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „LWIP_OPEN_SRC”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(27): warning C4005: "ARDUINO_ESP8266_GENERIC": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „ARDUINO_ESP8266_GENERIC”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(28): warning C4005: "ARDUINO_ARCH_ESP8266": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „ARDUINO_ARCH_ESP8266”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(30): warning C4005: "FLASHMODE_DOUT": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „FLASHMODE_DOUT”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(31): warning C4005: "ESP8266": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „ESP8266”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(32): warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#define"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(33): warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#undef"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(34): warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#define"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(40): warning C4005: "__asm__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(39): note: zobacz poprzednią definicję „__asm__”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\_ansi.h(65): warning C4005: "_EXFUN": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(86): note: zobacz poprzednią definicję „_EXFUN”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\lib\gcc\xtensa-lx106-elf\4.8.2\include\stddef.h(212): error C2371: "size_t": zmiana definicji; różne typy podstawowe
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz deklarację „size_t”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\lib\gcc\xtensa-lx106-elf\4.8.2\include\stdarg.h(40): warning C4091: "typedef ": zignorowano na lewo od "int" podczas gdy brak deklaracji zmiennej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(60): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(67): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(86): warning C4311: "typ rzutowania": obcięcie wskaźnika z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(86): warning C4302: "typ rzutowania": obcięcie z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(87): warning C4311: "typ rzutowania": obcięcie wskaźnika z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(87): warning C4302: "typ rzutowania": obcięcie z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(88): warning C4311: "typ rzutowania": obcięcie wskaźnika z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(88): warning C4302: "typ rzutowania": obcięcie z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(88): warning C4312: "typ rzutowania": konwersja z "int" na "const uint32_t *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(99): warning C4312: "typ rzutowania": konwersja z "uint32_t" na "void *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\core_esp8266_version.h(89): error C2760: błąd składniowy: nieoczekiwany token „{”, oczekiwano: „wyrażenie”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\core_esp8266_version.h(106): error C2760: błąd składniowy: nieoczekiwany token „{”, oczekiwano: „wyrażenie”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\algorithm(58): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\utility(58): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\concept_check.h(33): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\cpp_type_traits.h(35): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(32): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2143: błąd składniowy: brakuje „)” przed „+”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(189): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__promote_2<_Tp,_Up,_Tp2,_Up2>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2143: błąd składniowy: brakuje „;” przed „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2059: błąd składniowy: „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2059: błąd składniowy: „)”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2143: błąd składniowy: brakuje „)” przed „+”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(198): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__promote_3<_Tp,_Up,_Vp,_Tp2,_Up2,_Vp2>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2143: błąd składniowy: brakuje „;” przed „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2059: błąd składniowy: „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2059: błąd składniowy: „)”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2143: błąd składniowy: brakuje „)” przed „+”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(208): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__promote_4<_Tp,_Up,_Vp,_Wp,_Tp2,_Up2,_Vp2,_Wp2>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2143: błąd składniowy: brakuje „;” przed „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2059: błąd składniowy: „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2059: błąd składniowy: „)”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(32): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(103): error C3861: "__FLT_MANT_DIG__": identyfikatora nie odnaleziono
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(109): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__numeric_traits_floating<_Value>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(103): error C3861: "__DBL_MANT_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(103): error C3861: "__LDBL_MANT_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(107): error C3861: "__FLT_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(107): error C3861: "__DBL_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(107): error C3861: "__LDBL_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(108): error C3861: "__FLT_MAX_10_EXP__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(108): error C3861: "__DBL_MAX_10_EXP__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(108): error C3861: "__LDBL_MAX_10_EXP__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_iterator_base_types.h(62): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_iterator_base_funcs.h(62): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(737): error C2760: błąd składniowy: nieoczekiwany token „identyfikator”, oczekiwano: „;”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(749): error C2760: błąd składniowy: nieoczekiwany token „identyfikator”, oczekiwano: „;”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(981): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(985): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(989): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(993): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(997): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(1001): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\cstdlib(39): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\cstdlib(174): error C3861: "__builtin_llabs": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\algorithmfwd.h(33): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\alloc_traits.h(32): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\memoryfwd.h(46): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(58): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(128): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__numeric_traits_integer<_Value>” jest kompilowane
+          with
+          [
+              _Value=long
+          ]
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_tempbuf.h(88): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__numeric_traits<long>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(58): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(58): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(59): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(59): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(59): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(64): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(64): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(64): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algo.h(5086): error C2760: błąd składniowy: nieoczekiwany token „identyfikator”, oczekiwano: „;”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algo.h(5086): note: Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "_OIter std::generate_n(_OIter,_Size,_Generator)"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\include\ets_sys.h(98): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\include\ets_sys.h(106): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\include\ets_sys.h(113): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\WString.h(265): warning C4267: "return": konwersja z "size_t" do "unsigned int", możliwa utrata danych
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\MD5Builder.h(35): warning C4267: "argument": konwersja z "size_t" do "const uint16_t", możliwa utrata danych
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\functional(46): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C2039: „function”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(120): error C2061: błąd składniowy: identyfikator „THandlerFunction_Progress”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(203): error C3646: "_progress_callback": nieznany specyfikator przesłonięcia
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(203): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(270): error C2039: „isinf”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(270): error C2873: "isinf": symbol nie może zostać użyty w deklaracji using
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(271): error C2039: „isnan”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(271): error C2873: "isnan": symbol nie może zostać użyty w deklaracji using
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\pins_arduino.h(14): warning C4005: "LED_BUILTIN": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp: note: zobacz poprzednią definicję „LED_BUILTIN”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Esp.h(213): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\variants\generic\pins_arduino.h(32): error C2374: "SDA": zmiana definicji; wielokrotna inicjalizacja
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\pins_arduino.h(11): note: zobacz deklarację „SDA”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\variants\generic\pins_arduino.h(33): error C2374: "SCL": zmiana definicji; wielokrotna inicjalizacja
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\pins_arduino.h(12): note: zobacz deklarację „SCL”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(115): warning C4005: "interrupts": ponowna definicja makra
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(165): note: zobacz poprzednią definicję „interrupts”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(116): warning C4005: "noInterrupts": ponowna definicja makra
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(166): note: zobacz poprzednią definicję „noInterrupts”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(93): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(100): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(104): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(119): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(124): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(126): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\lwip\arch.h(202): error C2371: "ssize_t": zmiana definicji; różne typy podstawowe
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\types.h(203): note: zobacz deklarację „ssize_t”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\AddrList.h(127): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C2039: „function”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(182): error C2061: błąd składniowy: identyfikator „rxhandler_t”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(517): error C3646: "_on_rx": nieznany specyfikator przesłonięcia
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(517): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(183): error C2065: "_on_rx": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(183): error C2065: "handler": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(252): warning C4311: "typ rzutowania": obcięcie wskaźnika z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(252): warning C4302: "typ rzutowania": obcięcie z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(252): warning C4312: "typ rzutowania": konwersja z "intptr_t" na "void *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(349): warning C4267: "argument": konwersja z "size_t" do "u16_t", możliwa utrata danych
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): warning C4311: "typ rzutowania": obcięcie wskaźnika z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): warning C4302: "typ rzutowania": obcięcie z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): warning C4312: "typ rzutowania": konwersja z "intptr_t" na "void *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): error C2660: "operator new": funkcja nie przyjmuje 2 argumentów
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\predefined C++ types (compiler internal)(33): note: zobacz deklarację „operator new”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(493): error C2065: "_on_rx": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(494): error C3861: "_on_rx": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(40): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(455): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(455): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(445): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(445): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(448): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(448): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(522): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(522): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(512): error C2065: "__SCHAR_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(515): error C2065: "__SCHAR_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(593): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(595): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(585): error C2065: "__SCHAR_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(665): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(667): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(655): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(655): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(658): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(658): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(857): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(857): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(857): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(847): error C2065: "__SHRT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(850): error C2065: "__SHRT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(925): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(927): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(917): error C2065: "__SHRT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(997): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(997): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(997): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1065): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1067): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1136): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1136): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1136): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1204): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1206): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1277): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1277): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1277): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1347): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1349): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1568): error C2065: "__FLT_MANT_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1568): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1568): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1569): error C2065: "__FLT_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1569): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1569): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1577): error C2065: "__FLT_RADIX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1577): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1577): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1585): error C2065: "__FLT_MIN_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1585): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1585): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1586): error C2065: "__FLT_MIN_10_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1586): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1586): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1587): error C2065: "__FLT_MAX_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1587): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1587): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1588): error C2065: "__FLT_MAX_10_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1588): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1588): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1590): error C2065: "__FLT_HAS_INFINITY__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1590): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1590): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1591): error C2065: "__FLT_HAS_QUIET_NAN__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1591): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1591): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1592): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1592): note: niepowodzenie spowodowane przez argumenty inne niż stałe lub odwołanie do symbolu innego niż stała
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1592): note: zobacz użycie elementu „has_quiet_NaN”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1594): error C2065: "__FLT_HAS_DENORM__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1611): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1611): note: niepowodzenie spowodowane przez argumenty inne niż stałe lub odwołanie do symbolu innego niż stała
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1611): note: zobacz użycie elementu „has_infinity”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1558): error C2065: "__FLT_MIN__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1561): error C2065: "__FLT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1580): error C2065: "__FLT_EPSILON__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1608): error C2065: "__FLT_DENORM_MIN__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1643): error C2065: "__DBL_MANT_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1643): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1643): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1644): error C2065: "__DBL_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1644): error C2131: wyrażenie nie zostało obliczone do stałej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1644): fatal error C1003: Licznik błędów przekracza 100; zatrzymywanie kompilacji
+  GreetingProvider.cpp
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp : warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#define"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(16): warning C4005: "__ESP8266_esp8266__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „__ESP8266_esp8266__”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(17): warning C4005: "__ESP8266_ESP8266__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „__ESP8266_ESP8266__”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(18): warning C4005: "__ets__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „__ets__”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(19): warning C4005: "ICACHE_FLASH": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „ICACHE_FLASH”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(22): warning C4005: "LWIP_OPEN_SRC": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „LWIP_OPEN_SRC”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(27): warning C4005: "ARDUINO_ESP8266_GENERIC": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „ARDUINO_ESP8266_GENERIC”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(28): warning C4005: "ARDUINO_ARCH_ESP8266": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „ARDUINO_ARCH_ESP8266”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(30): warning C4005: "FLASHMODE_DOUT": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „FLASHMODE_DOUT”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(31): warning C4005: "ESP8266": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „ESP8266”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(32): warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#define"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(33): warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#undef"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(34): warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#define"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(40): warning C4005: "__asm__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(39): note: zobacz poprzednią definicję „__asm__”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\_ansi.h(65): warning C4005: "_EXFUN": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(86): note: zobacz poprzednią definicję „_EXFUN”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\lib\gcc\xtensa-lx106-elf\4.8.2\include\stddef.h(212): error C2371: "size_t": zmiana definicji; różne typy podstawowe
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz deklarację „size_t”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\lib\gcc\xtensa-lx106-elf\4.8.2\include\stdarg.h(40): warning C4091: "typedef ": zignorowano na lewo od "int" podczas gdy brak deklaracji zmiennej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(60): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(67): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(86): warning C4311: "typ rzutowania": obcięcie wskaźnika z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(86): warning C4302: "typ rzutowania": obcięcie z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(87): warning C4311: "typ rzutowania": obcięcie wskaźnika z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(87): warning C4302: "typ rzutowania": obcięcie z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(88): warning C4311: "typ rzutowania": obcięcie wskaźnika z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(88): warning C4302: "typ rzutowania": obcięcie z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(88): warning C4312: "typ rzutowania": konwersja z "int" na "const uint32_t *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(99): warning C4312: "typ rzutowania": konwersja z "uint32_t" na "void *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\core_esp8266_version.h(89): error C2760: błąd składniowy: nieoczekiwany token „{”, oczekiwano: „wyrażenie”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\core_esp8266_version.h(106): error C2760: błąd składniowy: nieoczekiwany token „{”, oczekiwano: „wyrażenie”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\algorithm(58): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\utility(58): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\concept_check.h(33): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\cpp_type_traits.h(35): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(32): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2143: błąd składniowy: brakuje „)” przed „+”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(189): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__promote_2<_Tp,_Up,_Tp2,_Up2>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2143: błąd składniowy: brakuje „;” przed „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2059: błąd składniowy: „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2059: błąd składniowy: „)”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2143: błąd składniowy: brakuje „)” przed „+”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(198): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__promote_3<_Tp,_Up,_Vp,_Tp2,_Up2,_Vp2>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2143: błąd składniowy: brakuje „;” przed „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2059: błąd składniowy: „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2059: błąd składniowy: „)”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2143: błąd składniowy: brakuje „)” przed „+”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(208): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__promote_4<_Tp,_Up,_Vp,_Wp,_Tp2,_Up2,_Vp2,_Wp2>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2143: błąd składniowy: brakuje „;” przed „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2059: błąd składniowy: „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2059: błąd składniowy: „)”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(32): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(103): error C3861: "__FLT_MANT_DIG__": identyfikatora nie odnaleziono
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(109): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__numeric_traits_floating<_Value>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(103): error C3861: "__DBL_MANT_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(103): error C3861: "__LDBL_MANT_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(107): error C3861: "__FLT_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(107): error C3861: "__DBL_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(107): error C3861: "__LDBL_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(108): error C3861: "__FLT_MAX_10_EXP__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(108): error C3861: "__DBL_MAX_10_EXP__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(108): error C3861: "__LDBL_MAX_10_EXP__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_iterator_base_types.h(62): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_iterator_base_funcs.h(62): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(737): error C2760: błąd składniowy: nieoczekiwany token „identyfikator”, oczekiwano: „;”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(749): error C2760: błąd składniowy: nieoczekiwany token „identyfikator”, oczekiwano: „;”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(981): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(985): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(989): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(993): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(997): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(1001): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\cstdlib(39): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\cstdlib(174): error C3861: "__builtin_llabs": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\algorithmfwd.h(33): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\alloc_traits.h(32): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\memoryfwd.h(46): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(58): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(128): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__numeric_traits_integer<_Value>” jest kompilowane
+          with
+          [
+              _Value=long
+          ]
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_tempbuf.h(88): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__numeric_traits<long>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(58): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(58): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(59): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(59): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(59): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(64): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(64): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(64): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algo.h(5086): error C2760: błąd składniowy: nieoczekiwany token „identyfikator”, oczekiwano: „;”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algo.h(5086): note: Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "_OIter std::generate_n(_OIter,_Size,_Generator)"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\include\ets_sys.h(98): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\include\ets_sys.h(106): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\include\ets_sys.h(113): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\WString.h(265): warning C4267: "return": konwersja z "size_t" do "unsigned int", możliwa utrata danych
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\MD5Builder.h(35): warning C4267: "argument": konwersja z "size_t" do "const uint16_t", możliwa utrata danych
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\functional(46): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C2039: „function”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(120): error C2061: błąd składniowy: identyfikator „THandlerFunction_Progress”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(203): error C3646: "_progress_callback": nieznany specyfikator przesłonięcia
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(203): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(270): error C2039: „isinf”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(270): error C2873: "isinf": symbol nie może zostać użyty w deklaracji using
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(271): error C2039: „isnan”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(271): error C2873: "isnan": symbol nie może zostać użyty w deklaracji using
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\pins_arduino.h(14): warning C4005: "LED_BUILTIN": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\GreetingProvider.cpp: note: zobacz poprzednią definicję „LED_BUILTIN”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Esp.h(213): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\variants\generic\pins_arduino.h(32): error C2374: "SDA": zmiana definicji; wielokrotna inicjalizacja
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\pins_arduino.h(11): note: zobacz deklarację „SDA”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\variants\generic\pins_arduino.h(33): error C2374: "SCL": zmiana definicji; wielokrotna inicjalizacja
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\pins_arduino.h(12): note: zobacz deklarację „SCL”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(115): warning C4005: "interrupts": ponowna definicja makra
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(165): note: zobacz poprzednią definicję „interrupts”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(116): warning C4005: "noInterrupts": ponowna definicja makra
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(166): note: zobacz poprzednią definicję „noInterrupts”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(93): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(100): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(104): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(119): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(124): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(126): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\lwip\arch.h(202): error C2371: "ssize_t": zmiana definicji; różne typy podstawowe
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\types.h(203): note: zobacz deklarację „ssize_t”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\AddrList.h(127): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C2039: „function”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(182): error C2061: błąd składniowy: identyfikator „rxhandler_t”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(517): error C3646: "_on_rx": nieznany specyfikator przesłonięcia
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(517): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(183): error C2065: "_on_rx": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(183): error C2065: "handler": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(252): warning C4311: "typ rzutowania": obcięcie wskaźnika z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(252): warning C4302: "typ rzutowania": obcięcie z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(252): warning C4312: "typ rzutowania": konwersja z "intptr_t" na "void *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(349): warning C4267: "argument": konwersja z "size_t" do "u16_t", możliwa utrata danych
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): warning C4311: "typ rzutowania": obcięcie wskaźnika z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): warning C4302: "typ rzutowania": obcięcie z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): warning C4312: "typ rzutowania": konwersja z "intptr_t" na "void *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): error C2660: "operator new": funkcja nie przyjmuje 2 argumentów
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\predefined C++ types (compiler internal)(33): note: zobacz deklarację „operator new”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(493): error C2065: "_on_rx": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(494): error C3861: "_on_rx": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(40): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(455): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(455): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(445): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(445): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(448): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(448): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(522): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(522): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(512): error C2065: "__SCHAR_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(515): error C2065: "__SCHAR_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(593): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(595): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(585): error C2065: "__SCHAR_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(665): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(667): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(655): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(655): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(658): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(658): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(857): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(857): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(857): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(847): error C2065: "__SHRT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(850): error C2065: "__SHRT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(925): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(927): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(917): error C2065: "__SHRT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(997): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(997): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(997): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1065): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1067): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1136): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1136): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1136): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1204): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1206): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1277): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1277): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1277): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1347): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1349): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1568): error C2065: "__FLT_MANT_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1568): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1568): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1569): error C2065: "__FLT_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1569): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1569): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1577): error C2065: "__FLT_RADIX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1577): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1577): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1585): error C2065: "__FLT_MIN_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1585): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1585): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1586): error C2065: "__FLT_MIN_10_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1586): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1586): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1587): error C2065: "__FLT_MAX_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1587): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1587): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1588): error C2065: "__FLT_MAX_10_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1588): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1588): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1590): error C2065: "__FLT_HAS_INFINITY__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1590): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1590): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1591): error C2065: "__FLT_HAS_QUIET_NAN__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1591): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1591): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1592): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1592): note: niepowodzenie spowodowane przez argumenty inne niż stałe lub odwołanie do symbolu innego niż stała
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1592): note: zobacz użycie elementu „has_quiet_NaN”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1594): error C2065: "__FLT_HAS_DENORM__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1611): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1611): note: niepowodzenie spowodowane przez argumenty inne niż stałe lub odwołanie do symbolu innego niż stała
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1611): note: zobacz użycie elementu „has_infinity”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1558): error C2065: "__FLT_MIN__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1561): error C2065: "__FLT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1580): error C2065: "__FLT_EPSILON__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1608): error C2065: "__FLT_DENORM_MIN__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1643): error C2065: "__DBL_MANT_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1643): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1643): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1644): error C2065: "__DBL_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1644): error C2131: wyrażenie nie zostało obliczone do stałej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1644): fatal error C1003: Licznik błędów przekracza 100; zatrzymywanie kompilacji
+  Source.cpp
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp : warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#define"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(16): warning C4005: "__ESP8266_esp8266__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „__ESP8266_esp8266__”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(17): warning C4005: "__ESP8266_ESP8266__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „__ESP8266_ESP8266__”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(18): warning C4005: "__ets__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „__ets__”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(19): warning C4005: "ICACHE_FLASH": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „ICACHE_FLASH”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(22): warning C4005: "LWIP_OPEN_SRC": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „LWIP_OPEN_SRC”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(27): warning C4005: "ARDUINO_ESP8266_GENERIC": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „ARDUINO_ESP8266_GENERIC”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(28): warning C4005: "ARDUINO_ARCH_ESP8266": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „ARDUINO_ARCH_ESP8266”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(30): warning C4005: "FLASHMODE_DOUT": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „FLASHMODE_DOUT”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(31): warning C4005: "ESP8266": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „ESP8266”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(32): warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#define"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(33): warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#undef"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(34): warning C4117: nazwa makro "__cplusplus" jest zarezerwowana, zignorowano "#define"
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(40): warning C4005: "__asm__": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(39): note: zobacz poprzednią definicję „__asm__”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\_ansi.h(65): warning C4005: "_EXFUN": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(86): note: zobacz poprzednią definicję „_EXFUN”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\lib\gcc\xtensa-lx106-elf\4.8.2\include\stddef.h(212): error C2371: "size_t": zmiana definicji; różne typy podstawowe
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz deklarację „size_t”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\lib\gcc\xtensa-lx106-elf\4.8.2\include\stdarg.h(40): warning C4091: "typedef ": zignorowano na lewo od "int" podczas gdy brak deklaracji zmiennej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(60): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(67): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(86): warning C4311: "typ rzutowania": obcięcie wskaźnika z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(86): warning C4302: "typ rzutowania": obcięcie z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(87): warning C4311: "typ rzutowania": obcięcie wskaźnika z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(87): warning C4302: "typ rzutowania": obcięcie z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(88): warning C4311: "typ rzutowania": obcięcie wskaźnika z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(88): warning C4302: "typ rzutowania": obcięcie z "const void *" do "int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(88): warning C4312: "typ rzutowania": konwersja z "int" na "const uint32_t *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\pgmspace.h(99): warning C4312: "typ rzutowania": konwersja z "uint32_t" na "void *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\core_esp8266_version.h(89): error C2760: błąd składniowy: nieoczekiwany token „{”, oczekiwano: „wyrażenie”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\core_esp8266_version.h(106): error C2760: błąd składniowy: nieoczekiwany token „{”, oczekiwano: „wyrażenie”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\algorithm(58): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\utility(58): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\concept_check.h(33): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\cpp_type_traits.h(35): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(32): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2143: błąd składniowy: brakuje „)” przed „+”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(189): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__promote_2<_Tp,_Up,_Tp2,_Up2>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2143: błąd składniowy: brakuje „;” przed „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2059: błąd składniowy: „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2059: błąd składniowy: „)”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(188): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2143: błąd składniowy: brakuje „)” przed „+”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(198): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__promote_3<_Tp,_Up,_Vp,_Tp2,_Up2,_Vp2>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2143: błąd składniowy: brakuje „;” przed „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2059: błąd składniowy: „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2059: błąd składniowy: „)”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(197): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2143: błąd składniowy: brakuje „)” przed „+”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(208): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__promote_4<_Tp,_Up,_Vp,_Wp,_Tp2,_Up2,_Vp2,_Wp2>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2143: błąd składniowy: brakuje „;” przed „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2059: błąd składniowy: „+”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2059: błąd składniowy: „)”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\type_traits.h(207): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(32): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(103): error C3861: "__FLT_MANT_DIG__": identyfikatora nie odnaleziono
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(109): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__numeric_traits_floating<_Value>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(103): error C3861: "__DBL_MANT_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(103): error C3861: "__LDBL_MANT_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(107): error C3861: "__FLT_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(107): error C3861: "__DBL_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(107): error C3861: "__LDBL_DIG__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(108): error C3861: "__FLT_MAX_10_EXP__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(108): error C3861: "__DBL_MAX_10_EXP__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(108): error C3861: "__LDBL_MAX_10_EXP__": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_iterator_base_types.h(62): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_iterator_base_funcs.h(62): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(737): error C2760: błąd składniowy: nieoczekiwany token „identyfikator”, oczekiwano: „;”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(749): error C2760: błąd składniowy: nieoczekiwany token „identyfikator”, oczekiwano: „;”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(981): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(985): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(989): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(993): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(997): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algobase.h(1001): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\cstdlib(39): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\cstdlib(174): error C3861: "__builtin_llabs": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\algorithmfwd.h(33): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\alloc_traits.h(32): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\memoryfwd.h(46): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(58): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(128): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__numeric_traits_integer<_Value>” jest kompilowane
+          with
+          [
+              _Value=long
+          ]
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_tempbuf.h(88): note: zobacz odwołanie do klasy klasa szablon; wystąpienie „__gnu_cxx::__numeric_traits<long>” jest kompilowane
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(58): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(58): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(59): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(59): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(59): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(64): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(64): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\ext\numeric_traits.h(64): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algo.h(5086): error C2760: błąd składniowy: nieoczekiwany token „identyfikator”, oczekiwano: „;”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\bits\stl_algo.h(5086): note: Diagnostyka wystąpiła w funkcji wygenerowanej przez kompilator "_OIter std::generate_n(_OIter,_Size,_Generator)"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\include\ets_sys.h(98): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\include\ets_sys.h(106): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\include\ets_sys.h(113): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\WString.h(265): warning C4267: "return": konwersja z "size_t" do "unsigned int", możliwa utrata danych
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\MD5Builder.h(35): warning C4267: "argument": konwersja z "size_t" do "const uint16_t", możliwa utrata danych
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\functional(46): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C2039: „function”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(52): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(120): error C2061: błąd składniowy: identyfikator „THandlerFunction_Progress”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(203): error C3646: "_progress_callback": nieznany specyfikator przesłonięcia
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Updater.h(203): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(270): error C2039: „isinf”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(270): error C2873: "isinf": symbol nie może zostać użyty w deklaracji using
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(271): error C2039: „isnan”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(271): error C2873: "isnan": symbol nie może zostać użyty w deklaracji using
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\pins_arduino.h(14): warning C4005: "LED_BUILTIN": ponowna definicja makra
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Source.cpp: note: zobacz poprzednią definicję „LED_BUILTIN”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Esp.h(213): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\variants\generic\pins_arduino.h(32): error C2374: "SDA": zmiana definicji; wielokrotna inicjalizacja
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\pins_arduino.h(11): note: zobacz deklarację „SDA”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\variants\generic\pins_arduino.h(33): error C2374: "SCL": zmiana definicji; wielokrotna inicjalizacja
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\pins_arduino.h(12): note: zobacz deklarację „SCL”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(115): warning C4005: "interrupts": ponowna definicja makra
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(165): note: zobacz poprzednią definicję „interrupts”
+C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\__vm\.Project1.vsarduino.h(116): warning C4005: "noInterrupts": ponowna definicja makra
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\Arduino.h(166): note: zobacz poprzednią definicję „noInterrupts”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(93): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(100): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(104): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(119): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(124): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\gluedebug.h(126): error C2010: „.”: nieoczekiwany na liście parametrów makra
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\lwip2\include\lwip\arch.h(202): error C2371: "ssize_t": zmiana definicji; różne typy podstawowe
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\tools\sdk\libc\xtensa-lx106-elf\include\sys\types.h(203): note: zobacz deklarację „ssize_t”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\cores\esp8266\AddrList.h(127): error C2059: błąd składniowy: „:”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C2039: „function”: Nie jest składową „std”
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\backward\binders.h(59): note: zobacz deklarację „std”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C2143: błąd składniowy: brakuje „;” przed „<”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(42): error C2238: nieoczekiwany(e) token(y) poprzedzający(e) ";"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(182): error C2061: błąd składniowy: identyfikator „rxhandler_t”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(517): error C3646: "_on_rx": nieznany specyfikator przesłonięcia
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(517): error C4430: brak specyfikatora typu - założono, że int. Uwaga: C++ nie obsługuje domyślnie typu int
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(183): error C2065: "_on_rx": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(183): error C2065: "handler": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(252): warning C4311: "typ rzutowania": obcięcie wskaźnika z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(252): warning C4302: "typ rzutowania": obcięcie z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(252): warning C4312: "typ rzutowania": konwersja z "intptr_t" na "void *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(349): warning C4267: "argument": konwersja z "size_t" do "u16_t", możliwa utrata danych
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): warning C4311: "typ rzutowania": obcięcie wskaźnika z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): warning C4302: "typ rzutowania": obcięcie z "void *" do "intptr_t"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): warning C4312: "typ rzutowania": konwersja z "intptr_t" na "void *" jest większej wielkości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(473): error C2660: "operator new": funkcja nie przyjmuje 2 argumentów
+  C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\predefined C++ types (compiler internal)(33): note: zobacz deklarację „operator new”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(493): error C2065: "_on_rx": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.5.2\libraries\ESP8266WiFi\src\include\UdpContext.h(494): error C3861: "_on_rx": identyfikatora nie odnaleziono
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(40): warning C4068: nieznana pragma
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(455): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(455): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(456): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(445): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(445): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(448): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(448): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(522): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(522): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(524): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(512): error C2065: "__SCHAR_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(515): error C2065: "__SCHAR_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(593): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(595): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(585): error C2065: "__SCHAR_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(665): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(667): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(655): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(655): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(658): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(658): warning C4293: "<<": licznik przesunięć ujemny lub zbyt duży, niezdefiniowane zachowanie
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(857): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(857): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(857): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(858): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(847): error C2065: "__SHRT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(850): error C2065: "__SHRT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(925): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(927): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(917): error C2065: "__SHRT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(997): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(997): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(997): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(998): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1065): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1067): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1136): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1136): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1136): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1137): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1204): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1206): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1277): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1277): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1277): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4307: "*": przepełnienie stałej całkowitej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4305: "inicjowanie": obcięcie z "unsigned __int64" do "const int"
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1279): warning C4309: "inicjowanie": obcięcie stałej wartości
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1347): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1349): warning C4804: "-": niebezpieczne użycie typu "bool" w operacji
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1568): error C2065: "__FLT_MANT_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1568): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1568): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1569): error C2065: "__FLT_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1569): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1569): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1577): error C2065: "__FLT_RADIX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1577): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1577): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1585): error C2065: "__FLT_MIN_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1585): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1585): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1586): error C2065: "__FLT_MIN_10_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1586): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1586): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1587): error C2065: "__FLT_MAX_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1587): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1587): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1588): error C2065: "__FLT_MAX_10_EXP__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1588): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1588): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1590): error C2065: "__FLT_HAS_INFINITY__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1590): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1590): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1591): error C2065: "__FLT_HAS_QUIET_NAN__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1591): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1591): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1592): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1592): note: niepowodzenie spowodowane przez argumenty inne niż stałe lub odwołanie do symbolu innego niż stała
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1592): note: zobacz użycie elementu „has_quiet_NaN”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1594): error C2065: "__FLT_HAS_DENORM__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1611): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1611): note: niepowodzenie spowodowane przez argumenty inne niż stałe lub odwołanie do symbolu innego niż stała
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1611): note: zobacz użycie elementu „has_infinity”
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1558): error C2065: "__FLT_MIN__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1561): error C2065: "__FLT_MAX__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1580): error C2065: "__FLT_EPSILON__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1608): error C2065: "__FLT_DENORM_MIN__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1643): error C2065: "__DBL_MANT_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1643): error C2131: wyrażenie nie zostało obliczone do stałej
+  C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1643): note: napotkano wyrażenie lub podwyrażenie niebędące stałą
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1644): error C2065: "__DBL_DIG__": niezadeklarowany identyfikator
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1644): error C2131: wyrażenie nie zostało obliczone do stałej
+C:\Users\Dominik\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\2.5.0-3-20ed2b9\xtensa-lx106-elf\include\c++\4.8.2\limits(1644): fatal error C1003: Licznik błędów przekracza 100; zatrzymywanie kompilacji
+  Generowanie kodu...
