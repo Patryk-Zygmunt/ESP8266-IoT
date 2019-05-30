@@ -1,4 +1,6 @@
 #include "Alarm.h"
+#include <Arduino.h>
+#include "pins_arduino.h"
 
 Alarm::Alarm() {
 	this->alarmState = 0;

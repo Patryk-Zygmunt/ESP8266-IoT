@@ -1,9 +1,5 @@
-#pragma once
-
-#include <string>
-
-#ifndef ALARM
-#define ALARM
+#ifndef _ALARM_h
+#define _ALARM_h
 
 class Alarm {
 
@@ -18,4 +14,3 @@ public:
 };
 
 #endif
-

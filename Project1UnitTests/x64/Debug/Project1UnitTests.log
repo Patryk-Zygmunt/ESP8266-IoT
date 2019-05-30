@@ -1,9 +1,1 @@
-﻿  pch.cpp
-  Project1UnitTests.cpp
-C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(12): error C2065: "LOW": niezadeklarowany identyfikator
-C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(13): error C2065: "D0": niezadeklarowany identyfikator
-C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(13): error C2065: "LOW": niezadeklarowany identyfikator
-C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(13): error C3861: "digitalWrite": identyfikatora nie odnaleziono
-C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(17): error C2065: "D0": niezadeklarowany identyfikator
-C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(17): error C2065: "HIGH": niezadeklarowany identyfikator
-C:\Users\Dominik\Desktop\ESP_XP\ESP8266-IoT\Project1\Alarm.cpp(17): error C3861: "digitalWrite": identyfikatora nie odnaleziono
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.Cpp.Platform.targets(67,5): error MSB8020: Nie można odnaleźć narzędzi kompilacji dla v142 (zestaw narzędzi platformy = „v142”). Aby wykonać kompilację przy użyciu narzędzi kompilacji v142, zainstaluj narzędzia kompilacji v142. Możesz też wykonać aktualizację do najnowszych narzędzi programu Visual Studio, wybierając menu Projekt lub klikając prawym przyciskiem myszy rozwiązanie, a następnie wybierając polecenie „Wskaż ponownie rozwiązanie...”.

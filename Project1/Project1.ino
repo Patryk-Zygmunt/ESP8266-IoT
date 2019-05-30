@@ -1,4 +1,5 @@
 #include "pins_arduino.h"
+#include "Alarm.h"
 #include <LEAmDNS_Priv.h>
 #include <LEAmDNS_lwIPdefs.h>
 #include <LEAmDNS.h>
@@ -9,7 +10,6 @@
 #include <ESP8266WebServerSecure.h>
 #include <ESP8266WebServer.h>
 #include <dummy.h>
-#include <Alarm.h>
 #include <WiFiUdp.h>
 #include <WiFiServerSecureBearSSL.h>
 #include <WiFiServerSecureAxTLS.h>
@@ -28,8 +28,9 @@
 #include <ESP8266WiFi.h>
 #include <CertStoreBearSSL.h>
 #include <BearSSLHelpers.h>
-#include "GreetingProvider.h";
 #include <Arduino.h>;
+#define HIGH 0x1
+#define LOW  0x0
 
 //void setup() {
 //  Serial.begin(115200);
@@ -48,10 +49,14 @@
 ESP8266WiFiMulti wifiMulti;     // Create an instance of the ESP8266WiFiMulti class, called 'wifiMulti'
 
 ESP8266WebServer server(80);    // Create a webserver object that listens for HTTP request on port 80
+Alarm alarm;
+static int sensorState = 0;
 
 void handleRoot();              // function prototypes for HTTP handlers
-void handleLogin();
 void handleNotFound();
+void handleSensorOn();
+void handleSensorOff();
+void handleLED();
 
 
 void setup(void) {
@@ -84,12 +89,12 @@ void setup(void) {
 	}
 
 
-	////HTTP server/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////HTTP server/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	server.on("/", HTTP_GET, handleRoot);        // Call the 'handleRoot' function when a client requests URI "/"
 	server.on("/LED", HTTP_POST, handleLED);  // Call the 'handleLED' function when a POST request is made to URI "/LED"
 	//server.on("/alarm", HTTP_GET, handleAlarm);
-	server.on("/ALARM_ON", HTTP_GET, handleAlarm);
-	server.on("/ALARM_OFF", HTTP_GET, handleAlarm);
+	server.on("/ALARM_ON", HTTP_GET, handleSensorOn);
+	server.on("/ALARM_OFF", HTTP_GET, handleSensorOff);
 	server.onNotFound(handleNotFound);           // When a client requests an unknown URI (i.e. something other than "/"), call function "handleNotFound"
 
 	server.begin();                            // Actually start the server
@@ -97,7 +102,8 @@ void setup(void) {
 }
 
 void loop(void) {
-	server.handleClient();                     // Listen for HTTP requests from clients
+	server.handleClient(); // Listen for HTTP requests from clients
+	alarm.setAlarm(sensorState);
 }
 
 void handleRoot() {                         // When URI / is requested, send a web page with a button to toggle the LED
@@ -110,16 +116,14 @@ void handleLED() {                          // If a POST request is made to URI 
 	server.send(303);                         // Send it back to the browser with an HTTP status 303 (See Other) to redirect
 }
 
-void handleAlarm() {
-	int sensorState = digitalRead(D0);
-	Alarm alarm;
-	alarm.setAlarm(sensorState);
+void handleSensorOn() {
+	sensorState = HIGH;
+}
+
+void handleSensorOff() {
+	sensorState = LOW;
 }
 
 void handleNotFound() {
 	server.send(404, "text/plain", "404: Not found"); // Send HTTP status 404 (Not Found) when there's no handler for the URI in the request
-}
-
-void handleAlarmSetter() {
-
 }
