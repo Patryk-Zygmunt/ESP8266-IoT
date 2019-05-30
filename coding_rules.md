@@ -1,0 +1,7 @@
+- nazwy klas zaczynają się z dużej litery (np. GameTable)
+- nazwy zmiennych i metod z małej litery (np. currentPosition, movePawn)
+ - nazwy stałych składają się z dużych liter i podkreśleń oddzielających wyrazy (np. GAME_SPEED)
+- wszystkie nazwy w języku angielskim
+- klamra otwierająca w lini deklaracji funkcji
+- długość lini nie większa niż długość ekranu
+- Pola powinny być umieszczone na początku klasy w kolejności: public, protected, private potem konstruktor a następnie metody
