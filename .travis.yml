@@ -1,0 +1,15 @@
+language: cpp
+compiler:
+  - gcc
+install:
+  - sudo apt-get update
+  - sudo apt-get install libcppunit-dev
+  - ./build.sh
+script:
+  - ./build/runtest
+branches:
+  only:
+  - master
+  - feature/pin-state
+before_install:
+  - chmod +x build.sh

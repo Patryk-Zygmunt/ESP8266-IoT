@@ -125,11 +125,15 @@
   <ItemGroup>
     <ClCompile Include="GreetingProvider.cpp" />
     <ClCompile Include="LoginPageProvider.cpp" />
+    <ClCompile Include="IPinState.cpp" />
+    <ClCompile Include="PinStateMock.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GreetingProvider.h" />
     <ClInclude Include="LoginPageProvider.h" />
+    <ClInclude Include="IPinState.h" />
+    <ClInclude Include="PinStateMock.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
