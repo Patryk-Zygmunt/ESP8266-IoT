@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </div>
+    </div>
+</nav>
+
+<main class="row" style="margin-top: 20px">
+    <div class="col-md-8 offset-md-2">
+    <table class="table" id="events">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Pin</th>
+            <th scope="col">Date</th>
+            <th scope="col">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+        <form id="add-event">
+            <label ><b>Add new event</b></label>
+            <div class="row">
+
+                <div class="col offset-1">
+
+                    <input type="text" class="form-control" name="thing" placeholder="Name">
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" name="pin" placeholder="Pin">
+                </div>
+                <div class="col">
+                <input type="date" class="form-control" name="date"   placeholder="Date">
+            </div>
+                <div class="col">
+                    <button type="button" onclick="addEvent()"   class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-2"></div>
+
+</main>
+
+
+
+</div>
+</body>
+<script>
+
+
+    const URL = "http://localhost:3000"
+    axios.get(URL +'/scheduler' ).then(r=>insertTable(r.data))
+
+
+
+    function addEvent(){
+        var event = JSON.stringify($("#add-event").serializeArray());
+        console.log(event)
+        axios.post(URL +'/scheduler',event ).then(r=>insertTable(r.data))
+
+    }
+
+
+
+    function insertTable(arr) {
+        const events = document.getElementById("events");
+         arr.map(res=> {
+            return {
+                thing: res.thing,
+                pin: res.pin,
+                date: moment(res.date, 'DD-MM-YYYY')
+            }
+        })
+            .sort((a,b)=>a.date.valueOf()- b.date.valueOf())
+            .forEach((item,index)=>events.appendChild(createTableRow(item.thing,item.pin,item.date,index)))
+
+    }moment().format();
+
+    function createTableRow(name,pin,date,index) {
+        var frag = document.createDocumentFragment(),
+            temp = document.createElement('tr');
+        temp.innerHTML =
+            `<th scope='row'>${index}</th>
+            <td>${name}</td>
+            <td>${pin}</td>
+            <td>${date.format('DD-MM-YYYY').toLocaleString()}</td>
+            <td><button type="button" class="btn btn-danger">Delete</button></td>
+`
+        frag.appendChild(temp)
+        return frag;
+    }
+</script>
+
+</html>
