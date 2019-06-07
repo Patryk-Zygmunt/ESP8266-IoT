@@ -60,7 +60,7 @@ app.get('/scheduler/', (req, res) => {
         thing : "gate"
     }
     mock2 = {
-        date : new Date(),
+        date : '23-12-24',
         pin: 2,
         thing : "light in bedroom"
     }
