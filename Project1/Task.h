@@ -2,17 +2,18 @@
 #define _TASK_h
 
 class Task {
-
-private:
+	
+public:
 	static long counter;
 	int id;
 	int pin;
-	long executionTime;
+	double executionTime;
 	bool targetState;
-public:
-	Task(int pin, long executionTime, bool targetState);
+	std::string name;
+	Task(int pin, double executionTime, bool targetState);
 	~Task();
 	bool execute();
+	
 
 };
 

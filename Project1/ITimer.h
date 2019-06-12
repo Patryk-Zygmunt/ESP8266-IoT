@@ -3,8 +3,11 @@
 
 class ITimer {
 public:
-	virtual long getTime() = 0;
-	virtual long getOffset() = 0;
+	double inputTime;
+	double  offsetTime;
+	double  currentTime;
+
+	double  updateCurrentTime();
 
 	ITimer();
 	~ITimer();
