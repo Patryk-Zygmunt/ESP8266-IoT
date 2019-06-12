@@ -33,12 +33,14 @@ app.post('/scheduler/', (req, res) => {
     mock = {
         date : moment(req.body.date).format('DD-MM-YYYY'),
         pin: req.body.pin,
-        thing : req.body.thing
+        thing : req.body.thing,
+        action : req.body.action
     }
     mock2 = {
         date : new Date(),
         pin: 2,
-        thing : "light in bedroom"
+        thing : "light in bedroom",
+        action : "turn on"
     }
     res.send(200,[mock,mock2])
 });
@@ -57,12 +59,14 @@ app.get('/scheduler/', (req, res) => {
     mock = {
         date : new Date(),
         pin: 12,
-        thing : "gate"
+        thing : "gate",
+        action : "turn on"
     }
     mock2 = {
         date : '23-12-24',
         pin: 2,
-        thing : "light in bedroom"
+        thing : "light in bedroom",
+        action: "turn off",
     }
     res.send([mock,mock2])
 });
