@@ -58,7 +58,7 @@ app.post('/action', (req, res) => {
 app.get('/scheduler/', (req, res) => {
     mock = {
         date : new Date(),
-        pin: 12,
+        pin: 2,
         thing : "gate",
         action : "turn on"
     }

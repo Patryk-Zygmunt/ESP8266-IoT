@@ -13,7 +13,7 @@ const arrayToObject = (array) =>
     }, {})
 
 
-function insertTable(arr) {
+function insertTable(arr, crTabFun) {
     const events = document.getElementById("events");
     events.innerHTML = ""
     arr.map(res=> {
@@ -25,27 +25,14 @@ function insertTable(arr) {
         }
     })
         .sort((a,b)=>a.date.valueOf()- b.date.valueOf())
-        .forEach((item,index)=>events.appendChild(createTableRow(item.thing,item.pin,item.date,item.action,index)))
+        .forEach((item,index)=>events.appendChild(crTabFun(item.thing,item.pin,item.date,item.action,index)))
 };
 
 
 
-const deleteEvent = (name,date)=>[
-
-    axios.delete(URL +'/scheduler',arrayToObject(event )).then(r=>insertTable(r.data))
+const makeAction = (pin)=>[
+    axios.get(URL +'/scheduler/pin').then(r=>console.log(r))
 ]
 
-function createTableRow(name,pin,date,action,index) {
-    var frag = document.createDocumentFragment(),
-        temp = document.createElement('tr');
-    temp.innerHTML =
-        `<th scope='row'>${index}</th>
-            <td>${name}</td>
-            <td>${pin}</td>
-            <td>${date.format('DD-MM-YYYY').toLocaleString()}</td>
-            <td><button type="button" class="btn btn-success" onclick="deleteEvent('${name}','${pin}')">${action}</button></td>
-`
-    frag.appendChild(temp)
-    return frag;
-}
+
 
