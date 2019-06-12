@@ -10,6 +10,7 @@ const char *password = "password";
 
 ESP8266WebServer server(80);
 LoginPageProvider loginProvider;
+Scheduler scheduler;
 
 void setup()
 {
@@ -22,6 +23,8 @@ void setup()
   server.on("/", handleRoot);
   server.on("/loginPage", handleLoginPage);
   server.on("/doLogin", handleDoLogin);
+  server.on("/addTask", handleAddTask);
+  server.on("/deleteTask", handleDeleteTask);
   server.begin();
 }
 
@@ -84,8 +87,7 @@ void handleDoLogin()
   std::string inputLogin = toStdStr(server.arg("login"));
   std::string inputPassword = toStdStr(server.arg("password"));
   std::string token = loginProvider.validateUserData(inputLogin, inputPassword);
-  Serial.println(inputLogin.c_str());
-  Serial.println(inputPassword.c_str());
+  Serial.println(token.c_str());
   if (token != "")
   {
     server.sendHeader("Location", "/");
@@ -125,4 +127,17 @@ std::string toStdStr(String s)
   char char_array[str_len];
   s.toCharArray(char_array, str_len);
   return std::string(char_array);
+}
+
+
+
+void handleAddTask()
+{
+  Task task;
+  task.name = toStdStr(server.arg("name"));
+  task.pin = server.arg("pin").toInt();
+  task.executionTime = server.arg("executionTime").toDouble();
+  task.targetState = server.arg("targetState").compareTo("true") == 0 ? true : false;
+
+  scheduler.addTask(task);
 }
