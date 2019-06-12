@@ -18,6 +18,19 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Documents\Arduino\sketch_may29a\sketch_jun05c\sketch_jun05c.ino" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Documents\Arduino\sketch_may29a\sketch_jun05c\Event.cpp" />
+    <ClCompile Include="..\..\..\..\Documents\Arduino\sketch_may29a\sketch_jun05c\HTMLFactory.cpp" />
+    <ClCompile Include="..\..\..\..\Documents\Arduino\sketch_may29a\sketch_jun05c\Scheduler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Documents\Arduino\sketch_may29a\sketch_jun05c\Event.h" />
+    <ClInclude Include="..\..\..\..\Documents\Arduino\sketch_may29a\sketch_jun05c\HTMLFactory.h" />
+    <ClInclude Include="..\..\..\..\Documents\Arduino\sketch_may29a\sketch_jun05c\Scheduler.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{61FBE289-F466-4EF2-98F6-D602D9780004}</ProjectGuid>
@@ -122,19 +135,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="GreetingProvider.cpp" />
-    <ClCompile Include="LoginPageProvider.cpp" />
-    <ClCompile Include="IPinState.cpp" />
-    <ClCompile Include="PinStateMock.cpp" />
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GreetingProvider.h" />
-    <ClInclude Include="LoginPageProvider.h" />
-    <ClInclude Include="IPinState.h" />
-    <ClInclude Include="PinStateMock.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
