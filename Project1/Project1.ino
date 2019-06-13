@@ -15,16 +15,21 @@
 const char *ssid = "AAAAAAAAAAAAAAAAAAAAAAAAAAa";
 const char *password = "password";
 
-const char *index_path = "/index.html";
-const char *js_path = "/main.js";
-const char *html = "text/html";
-const char *js = "application/javascript";
+const char *INDEX_PATH = "/index.html";
+const char *JS_PATH = "/main.js";
+const char *LOGIN_PATH = "/login.html";
+const char *ALERT_PATH = "/alert.html";
+const char *HTML_CONTENT = "text/html";
+const char *JS_CONTENT = "application/javascript";
+
+uint8_t RESET_PIN = D3; //GPIO0, flash button
 
 ESP8266WebServer server(80);
 LoginPageProvider loginProvider;
 
 void setup()
 {
+  pinMode(RESET_PIN, INPUT);
   SPIFFS.begin();
   Serial.begin(115200);
   delay(2000);
@@ -33,13 +38,19 @@ void setup()
   size_t headerkeyssize = sizeof(headerkeys) / sizeof(char *);
   server.collectHeaders(headerkeys, headerkeyssize);
   server.on("/", handleRoot);
-  server.on("/main.js", handleJs);
-  server.on("/devices.html", handleJs);
+  server.on("/main.js", handleMainJs);
+  server.on("/axios.min.js", handleAxiosJs);
+  server.on("/moment.min.js", handleMomentJs);
+  server.on("/jquery-3.3.1.slim.min.js", handleJqueryJs);
+  server.on("/bootstrap.min.css", handleBootstrap);
+
+  // server.on("/devices.html", handleJs);
   server.on("/scheduler", HTTP_POST, handlePostScheduler);
   server.on("/scheduler", HTTP_GET, handleGetScheduler);
   server.on("/loginPage", handleLoginPage);
   server.on("/doLogin", handleDoLogin);
   server.begin();
+  delay(3000);
 }
 
 void initializeWiFi()
@@ -65,8 +76,22 @@ void initializeWiFi()
 
 void loop()
 {
+  handleReset();
   logInfo();
   server.handleClient();
+}
+
+void handleReset()
+{
+  if (digitalRead(RESET_PIN) == 0)
+  {
+    delay(5000);
+    if (digitalRead(RESET_PIN) == 0)
+    {
+      Serial.println("Resetting...");
+      ESP.reset();
+    }
+  }
 }
 
 void logInfo()
@@ -81,20 +106,83 @@ void logInfo()
   }
 }
 
-void handleJs()
+void handleMainJs()
 {
-  if (SPIFFS.exists(js_path))
+  if (SPIFFS.exists(JS_PATH))
   {
-    File jsFile = SPIFFS.open(js_path, "r");
-    size_t sent = server.streamFile(jsFile, js);
+    File jsFile = SPIFFS.open(JS_PATH, "r");
+    size_t sent = server.streamFile(jsFile, JS_CONTENT);
     jsFile.close();
-    Serial.printf("File %s sent, %d bytes\n", js_path, sent);
+    Serial.printf("File %s sent, %d bytes\n", JS_PATH, sent);
   }
   else
   {
-    Serial.printf("%s does not exist\n", js_path);
+    Serial.printf("%s does not exist\n", JS_PATH);
   }
-  handleGetScheduler();
+}
+
+void handleAxiosJs()
+{
+  char *file = "/axios.min.js";
+  if (SPIFFS.exists(file))
+  {
+    File jsFile = SPIFFS.open(file, "r");
+    size_t sent = server.streamFile(jsFile, JS_CONTENT);
+    jsFile.close();
+    Serial.printf("File %s sent, %d bytes\n", file, sent);
+  }
+  else
+  {
+    Serial.printf("%s does not exist\n", file);
+  }
+}
+
+void handleMomentJs()
+{
+  char *file = "/moment.min.js";
+  if (SPIFFS.exists(file))
+  {
+    File jsFile = SPIFFS.open(file, "r");
+    size_t sent = server.streamFile(jsFile, JS_CONTENT);
+    jsFile.close();
+    Serial.printf("File %s sent, %d bytes\n", file, sent);
+  }
+  else
+  {
+    Serial.printf("%s does not exist\n", file);
+  }
+}
+
+void handleJqueryJs()
+{
+  char *file = "/jquery-3.3.1.slim.min.js";
+  if (SPIFFS.exists(file))
+  {
+    File jsFile = SPIFFS.open(file, "r");
+    size_t sent = server.streamFile(jsFile, JS_CONTENT);
+    jsFile.close();
+    Serial.printf("File %s sent, %d bytes\n", file, sent);
+  }
+  else
+  {
+    Serial.printf("%s does not exist\n", file);
+  }
+}
+
+void handleBootstrap()
+{
+  char *file = "/bootstrap.min.css";
+  if (SPIFFS.exists(file))
+  {
+    File jsFile = SPIFFS.open(file, "r");
+    size_t sent = server.streamFile(jsFile, "text/css");
+    jsFile.close();
+    Serial.printf("File %s sent, %d bytes\n", file, sent);
+  }
+  else
+  {
+    Serial.printf("%s does not exist\n", file);
+  }
 }
 
 void handleRoot()
@@ -104,19 +192,17 @@ void handleRoot()
     return;
   }
 
-  if (SPIFFS.exists(index_path))
+  if (SPIFFS.exists(INDEX_PATH))
   {
-    File indexFile = SPIFFS.open(index_path, "r");
-    size_t sent = server.streamFile(indexFile, html);
+    File indexFile = SPIFFS.open(INDEX_PATH, "r");
+    size_t sent = server.streamFile(indexFile, HTML_CONTENT);
     indexFile.close();
-    Serial.printf("File %s sent, %d bytes\n", index_path, sent);
+    Serial.printf("File %s sent, %d bytes\n", INDEX_PATH, sent);
   }
   else
   {
-    Serial.printf("%s does not exist\n", index_path);
+    Serial.printf("%s does not exist\n", INDEX_PATH);
   }
-  // std::string contents = "hello from esp8266! <br/>" + loginProvider.getLogoutButton();
-  // server.send(200, "text/html", contents.c_str());
 }
 
 void handlePostScheduler()
@@ -129,7 +215,7 @@ void handlePostScheduler()
   StaticJsonDocument<256> doc;
   deserializeJson(doc, server.arg("plain"));
   JsonObject root = doc.as<JsonObject>();
-  server.send(200, "text/html", "OK");
+  server.send(200, HTML_CONTENT, "OK");
 
   // Examples
   Serial.println(server.arg("plain"));
@@ -176,7 +262,18 @@ void handleGetScheduler()
 
 void handleLoginPage()
 {
-  server.send(200, "text/html", loginProvider.getLoginPageContents().c_str());
+  if (SPIFFS.exists(LOGIN_PATH))
+  {
+    File loginFile = SPIFFS.open(LOGIN_PATH, "r");
+    size_t sent = server.streamFile(loginFile, HTML_CONTENT);
+    loginFile.close();
+    Serial.printf("File %s sent, %d bytes\n", LOGIN_PATH, sent);
+  }
+  else
+  {
+    Serial.printf("%s does not exist\n", LOGIN_PATH);
+  }
+  // server.send(200, "text/html", loginProvider.getLoginPageContents().c_str());
 }
 
 void handleDoLogin()
@@ -197,7 +294,36 @@ void handleDoLogin()
   else
   {
     Serial.println("Invalid credentials login!");
-    server.send(403, "text/html", loginProvider.getInvalidCredentialsPage().c_str());
+    sendAlert("Error", "Invalid credentials!", "/loginPage", 3);
+  }
+}
+
+boolean sendAlert(String header, String contents, String redirect, int delay)
+{
+  if (SPIFFS.exists(ALERT_PATH))
+  {
+    File alertFile = SPIFFS.open(ALERT_PATH, "r");
+    String fileContents;
+    while (alertFile.available())
+    {
+      String line = String(char(alertFile.read()));
+      fileContents += line.c_str();
+    }
+    alertFile.close();
+    fileContents.replace("%TIME%", String(delay));
+    fileContents.replace("%REDIRECT%", redirect);
+    fileContents.replace("%HEADER%", header);
+    fileContents.replace("%CONTENT%", contents);
+
+    Serial.println(fileContents);
+    server.send(400, "text/html", fileContents);
+    Serial.printf("File %s sent\n", ALERT_PATH);
+    return true;
+  }
+  else
+  {
+    Serial.printf("%s does not exist\n", ALERT_PATH);
+    return false;
   }
 }
 
@@ -215,7 +341,7 @@ bool checkIfAuthorized()
     }
   }
   Serial.printf("Access denied!\n");
-  server.send(403, "text/html", loginProvider.getInvalidCredentialsPage().c_str());
+  sendAlert("Error", "Invalid credentials!", "/loginPage", 3);
   return false;
 }
 
