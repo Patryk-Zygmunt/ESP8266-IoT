@@ -31,7 +31,7 @@ app.use(function (req, res, next) {
 
 app.post('/scheduler/', (req, res) => {
     mock = {
-        date : moment(req.body.date).format('DD-MM-YYYY'),
+        date : moment(req.body.date),
         pin: req.body.pin,
         thing : req.body.thing,
         action : req.body.action

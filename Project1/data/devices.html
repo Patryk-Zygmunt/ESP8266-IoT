@@ -26,8 +26,10 @@
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="index.html">Events </a>
             <a class="nav-item nav-link active" href="">Devices <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href=""><button class="btn btn-info" onclick='document.cookie =/"\xxxxxx\"; window.location = \"/loginPage\";'>Logout</button></a>
+            </div>
         </div>
-    </div>
+    
 </nav>
 
 <main class="row" style="margin-top: 20px">
@@ -86,13 +88,6 @@
     axios.get(URL +'/scheduler' ).then(r=>insertTable(uniqeArr(r.data),createTableRowDevices))
 
 
-
-    function uniqeArr(arr){
-    pinArr = arr.map(i=>i.pin)
-      return   arr.filter(function (item, pos) {
-            return pinArr.indexOf(item.pin) == pos;
-        })
-    }
 
 
     function createTableRowDevices(name,pin,date,action,index) {
