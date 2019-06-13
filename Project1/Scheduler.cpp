@@ -46,14 +46,6 @@ bool Scheduler::runAvailableTasks(ITimer timer) {
 	std::vector <Task>::iterator iterator;
 	timer.updateCurrentTime();
 	bool executed;
-
-  for (Task &t: tasks) {
-    if (t.executionTime < timer.currentTime) {
-      (*iterator).execute();
-      int taskId = (*iterator).id;
-      executed = finalizeTask(taskId);
-    }
-  }
   
 	for (iterator = tasks.begin(); iterator != tasks.end(); ++iterator) {
 		if ((*iterator).executionTime < timer.currentTime) {

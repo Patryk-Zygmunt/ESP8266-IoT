@@ -244,21 +244,16 @@ void handleGetScheduler()
 
   StaticJsonDocument<400> doc;
   JsonArray array = doc.to<JsonArray>();
-  JsonObject event1 = array.createNestedObject();
-  event1["pin"] = "1";
-  event1["thing"] = "thing_a";
-  event1["date"] = "12-12-12";
-  event1["action"] = "Turn on";
-  JsonObject event2 = array.createNestedObject();
-  event2["pin"] = "2";
-  event2["thing"] = "thing_b";
-  event2["date"] = "12-12-12";
-  event2["action"] = "Turn off";
-  JsonObject event3 = array.createNestedObject();
-  event3["pin"] = "3";
-  event3["thing"] = "thing_c";
-  event3["date"] = "12-12-12";
-  event3["action"] = "Turn on";
+
+  std::vector <Task> tasks = scheduler.tasks;
+
+  for(iterator = tasks.begin(); iterator != tasks.end(); ++iterator) {
+		JsonObject event = array.createNestedObject();
+		event["pin"] = (*iterator).pin;
+		event["thing"] = (*iterator).name;
+		event["date"] = (*iterator).executionTime;
+		event["action"] = (*iterator).status;
+	}
 
   String myString;
   serializeJson(array, myString);
