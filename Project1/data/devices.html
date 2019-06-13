@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">IoT Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Events </a>
+            <a class="nav-item nav-link active" href="">Devices <span class="sr-only">(current)</span></a>
+        </div>
+    </div>
+</nav>
+
+<main class="row" style="margin-top: 20px">
+    <div class="col-md-8 offset-md-2">
+    <table class="table" >
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Pin</th>
+            <th scope="col">Action</th>
+        </tr>
+        </thead>
+        <tbody id="events">
+
+        </tbody>
+    </table>
+        <!--<form id="add-event">-->
+            <!--<label ><b>Add new device</b></label>-->
+            <!--<div class="row">-->
+
+                <!--<div class="col-md-3 col-sm-6">-->
+
+                    <!--<input type="text" class="form-control" name="thing" placeholder="Name">-->
+                <!--</div>-->
+                <!--<div class="col-md-2 col-sm-6">-->
+                    <!--<input type="number" class="form-control" name="pin" placeholder="Pin">-->
+                <!--</div>-->
+                    <!--<div class="col-md-2 col-sm-6">-->
+                        <!--<select class="custom-select custom-select-mb" name = "action">-->
+                            <!--<option selected>Choose Action</option>-->
+                            <!--<option value="Turn on">Turn on</option>-->
+                            <!--<option value="Turn off">Turn off</option>-->
+                        <!--</select>-->
+                    <!--</div>-->
+
+            <!--&lt;!&ndash;<div class="row" style="margin-top: 10px">&ndash;&gt;-->
+                <!--<div class="col-md-2 offset-md-0 col-sm-3 offset-sm-10 ">-->
+                    <!--<button type="button" onclick="addEvent()"   class="btn btn-success">Add</button>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</form>-->
+    </div>
+    <div class="col-md-2"></div>
+
+</main>
+
+
+
+</div>
+</body>
+<script>
+
+
+    const URL = "http://localhost:3000"
+    axios.get(URL +'/scheduler' ).then(r=>insertTable(uniqeArr(r.data),createTableRowDevices))
+
+
+
+    function uniqeArr(arr){
+    pinArr = arr.map(i=>i.pin)
+      return   arr.filter(function (item, pos) {
+            return pinArr.indexOf(item.pin) == pos;
+        })
+    }
+
+
+    function createTableRowDevices(name,pin,date,action,index) {
+        var frag = document.createDocumentFragment(),
+            temp = document.createElement('tr');
+        temp.innerHTML =
+            `<th scope='row'>${index}</th>
+            <td>${name}</td>
+            <td>${pin}</td>
+            <td><button type="button" class="btn btn-success" onclick="makeAction('${pin}')">${action}</button></td>
+`
+        frag.appendChild(temp)
+        return frag;
+    }
+
+
+
+</script>
+
+</html>
