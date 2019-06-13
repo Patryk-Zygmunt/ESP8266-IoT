@@ -16,8 +16,10 @@ const char *ssid = "AAAAAAAAAAAAAAAAAAAAAAAAAAa";
 const char *password = "password";
 
 const char *INDEX_PATH = "/index.html";
+const char *CONFIG_PATH = "/config.txt";
 const char *JS_PATH = "/main.js";
 const char *LOGIN_PATH = "/login.html";
+const char *INIT_PATH = "/init.html";
 const char *ALERT_PATH = "/alert.html";
 const char *HTML_CONTENT = "text/html";
 const char *JS_CONTENT = "application/javascript";
@@ -33,6 +35,21 @@ void setup()
   SPIFFS.begin();
   Serial.begin(115200);
   delay(2000);
+
+  if (SPIFFS.exists(CONFIG_PATH))
+  {
+    File config = SPIFFS.open(CONFIG_PATH, "r");
+    while (config.available())
+    {
+      String line = String(char(config.read()));
+      Serial.print(line);
+    }
+  }
+  else
+  {
+    Serial.print("config file does not exist");
+  }
+
   initializeWiFi();
   const char *headerkeys[] = {"User-Agent", "Cookie"};
   size_t headerkeyssize = sizeof(headerkeys) / sizeof(char *);
@@ -43,6 +60,8 @@ void setup()
   server.on("/moment.min.js", handleMomentJs);
   server.on("/jquery-3.3.1.slim.min.js", handleJqueryJs);
   server.on("/bootstrap.min.css", handleBootstrap);
+  server.on("/init", handleInit);
+  server.on("/doInit", HTTP_POST, handleDoInit);
 
   // server.on("/devices.html", handleJs);
   server.on("/scheduler", HTTP_POST, handlePostScheduler);
@@ -89,6 +108,7 @@ void handleReset()
     if (digitalRead(RESET_PIN) == 0)
     {
       Serial.println("Resetting...");
+      SPIFFS.remove(CONFIG_PATH);
       ESP.reset();
     }
   }
@@ -103,6 +123,53 @@ void logInfo()
     lastStations = WiFi.softAPgetStationNum();
     ;
     Serial.printf("Stations connected = %d\n", stations);
+  }
+}
+
+void handleInit()
+{
+  if (SPIFFS.exists(INIT_PATH))
+  {
+    File initFile = SPIFFS.open(INIT_PATH, "r");
+    size_t sent = server.streamFile(initFile, HTML_CONTENT);
+    initFile.close();
+    Serial.printf("File %s sent, %d bytes\n", INIT_PATH, sent);
+  }
+  else
+  {
+    Serial.printf("%s does not exist\n", JS_PATH);
+    sendAlert("Error", "An error occured!", "/", 3);
+  }
+}
+
+void handleDoInit()
+{
+  if (SPIFFS.exists(CONFIG_PATH))
+  {
+    sendAlert("Error", "Access denied!", "/", 3);
+    return;
+  }
+  else
+  {
+    String ssid = server.arg("ssid");
+    String wifiPass = server.arg("wifi_password");
+    String user = server.arg("user");
+    String userPass = server.arg("user_password");
+    String mode = server.arg("mode");
+    File file = SPIFFS.open("CONFIG_PATH", "w");
+    file.println(ssid);
+    file.println(wifiPass);
+    file.println(user);
+    file.println(userPass);
+    file.println(mode);
+    file.close();
+    sendAlert("OK", "All data has been updated. Board will restart now...", "/", 5);
+
+        Serial.println(ssid.c_str());
+    Serial.println(wifiPass.c_str());
+    Serial.println(user.c_str());
+    Serial.println(userPass.c_str());
+    Serial.println(mode.c_str());
   }
 }
 
