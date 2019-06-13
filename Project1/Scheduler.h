@@ -12,11 +12,10 @@ public:
 	std::vector <Task> tasks;
 	Scheduler();
 	~Scheduler();
-	//void addTask(int delayTime, int pin);
 	void addTask(Task task);
-	void runAvailableTasks(ITimer timer);
+	bool runAvailableTasks(ITimer timer);
 	bool finalizeTask(Task task);
-	
+	bool finalizeTask(int taskId);
 
 };
 

@@ -5,7 +5,7 @@
 class Task {
 	
 public:
-	static long counter;
+	static int counter;
 	int id;
 	int pin;
 	double executionTime;

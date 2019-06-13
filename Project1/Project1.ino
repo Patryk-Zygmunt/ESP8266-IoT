@@ -27,7 +27,6 @@ void setup()
   server.on("/loginPage", handleLoginPage);
   server.on("/doLogin", handleDoLogin);
   server.on("/addTask", handleAddTask);
-  server.on("/deleteTask", handleDeleteTask);
   server.begin();
 }
 
