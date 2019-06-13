@@ -1,5 +1,8 @@
 #ifndef _SCHEDULER_h
 #define _SCHEDULER_h
+#include <vector>
+#include "Task.h"
+#include "ITimer.h"
 
 class Scheduler {
 

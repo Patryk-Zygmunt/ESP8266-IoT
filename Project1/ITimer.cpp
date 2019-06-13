@@ -1,4 +1,5 @@
 #include "ITimer.h"
+#include "Arduino.h"
 
 
 
@@ -11,6 +12,6 @@ ITimer::~ITimer()
 {
 }
 
-void updateCurrentTime() {
-	this->currentTime = this->inputTime + millis() - this->offsetTime;
+void ITimer::updateCurrentTime() {
+	currentTime = inputTime + millis() - offsetTime;
 }

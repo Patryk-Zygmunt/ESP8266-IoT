@@ -1,5 +1,6 @@
 #ifndef _TASK_h
 #define _TASK_h
+#include <string>
 
 class Task {
 	
@@ -10,7 +11,7 @@ public:
 	double executionTime;
 	bool targetState;
 	std::string name;
-	Task(int pin, double executionTime, bool targetState);
+	Task(std::string name, int pin, double executionTime, bool targetState);
 	~Task();
 	bool execute();
 	

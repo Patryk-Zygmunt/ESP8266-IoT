@@ -5,10 +5,11 @@ class ITimer {
 public:
 	double inputTime;
 	double  offsetTime;
-	double  currentTime;
+	double   currentTime;
 
-	double  updateCurrentTime();
+	void  updateCurrentTime();
 
 	ITimer();
 	~ITimer();
 };
+#endif

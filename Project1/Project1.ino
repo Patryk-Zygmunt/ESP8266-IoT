@@ -1,5 +1,8 @@
 #include "GreetingProvider.h";
 #include "LoginPageProvider.h";
+#include "Scheduler.h";
+#include "Task.h";
+#include "ITimer.h"
 
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
@@ -133,11 +136,9 @@ std::string toStdStr(String s)
 
 void handleAddTask()
 {
-  Task task;
-  task.name = toStdStr(server.arg("name"));
-  task.pin = server.arg("pin").toInt();
-  task.executionTime = server.arg("executionTime").toDouble();
-  task.targetState = server.arg("targetState").compareTo("true") == 0 ? true : false;
-
+  Task task(toStdStr(server.arg("name")),
+            server.arg("pin").toInt(),
+            server.arg("executionTime").toDouble(),
+            server.arg("targetState").compareTo("true") == 0 ? true : false);
   scheduler.addTask(task);
 }

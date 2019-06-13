@@ -14,7 +14,7 @@ Task::~Task()
 {
 }
 
-bool execute() {
+bool Task::execute() {
 
 	int pinState = digitalRead(this->pin);
 
