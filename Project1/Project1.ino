@@ -22,14 +22,14 @@ const char *ALERT_PATH = "/alert.html";
 const char *HTML_CONTENT = "text/html";
 const char *JS_CONTENT = "application/javascript";
 
-uint8_t RESET_PIN = D3; //GPIO0, flash button
+// uint8_t RESET_PIN = D3; //GPIO0, flash button
 
 ESP8266WebServer server(80);
 LoginPageProvider loginProvider;
 
 void setup()
 {
-  pinMode(RESET_PIN, INPUT);
+  // pinMode(RESET_PIN, INPUT);
   SPIFFS.begin();
   Serial.begin(115200);
   delay(2000);
@@ -83,15 +83,15 @@ void loop()
 
 void handleReset()
 {
-  if (digitalRead(RESET_PIN) == 0)
-  {
-    delay(5000);
-    if (digitalRead(RESET_PIN) == 0)
-    {
-      Serial.println("Resetting...");
-      ESP.reset();
-    }
-  }
+  // // if (digitalRead(RESET_PIN) == 0)
+  // {
+  //   delay(5000);
+  //   // if (digitalRead(RESET_PIN) == 0)
+  //   {
+  //     Serial.println("Resetting...");
+  //     ESP.reset();
+  //   }
+  // }
 }
 
 void logInfo()
