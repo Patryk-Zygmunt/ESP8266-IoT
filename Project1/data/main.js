@@ -19,7 +19,7 @@ function insertTable(arr) {
         return {
             thing: res.thing,
             pin: res.pin,
-            date: moment(res.date, 'DD-MM-YYYY'),
+            date: moment(res.date, 'DD-MM-YYYY HH:mm'),
             action: res.action
         }
     })
@@ -34,7 +34,7 @@ function createTableRow(name, pin, d, action, index) {
         `<th scope='row'>${index}</th>
             <td>${name}</td>
             <td>${pin}</td>
-            <td>${(d.format()).toLocaleString()}</td>
+            <td>${(d.format('DD-MM-YYYY HH:mm')).toLocaleString()}</td>
             <td><button type="button" class="btn btn-secondary" onclick="deleteEvent('${name}','${pin}')">${action}</button></td>
     `
     frag.appendChild(temp)
@@ -45,6 +45,13 @@ const makeAction = (pin) => [
     axios.get('/scheduler/pin').then(r => console.log(r))
 ]
 
+
+function uniqeArr(arr){
+   let  pinArr = arr.map(i=>i.pin)
+    return   arr.filter(function (item, pos) {
+        return pinArr.indexOf(item.pin) == pos;
+    })
+}
 
 
 
