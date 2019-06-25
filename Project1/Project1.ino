@@ -1,28 +1,26 @@
+#include <string>
+#include <iostream>
+#include <sstream>
+
 #include "ArduinoJson.h"
-
-#include <string>   // std::string
-#include <iostream> // std::cout
-#include <sstream>  // std::ostringstream
-
-#include "GreetingProvider.h";
-#include "LoginPageProvider.h";
-
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
 #include <ESP8266mDNS.h>
 #include <FS.h>
 
-const char *ssid = "AAAAAAAAAAAAAAAAAAAAAAAAAAa";
-const char *password = "password";
+#include "GreetingProvider.h";
+#include "LoginPageProvider.h";
+
+#include "init.cpp";
 
 const char *INDEX_PATH = "/index.html";
-const char *CONFIG_PATH = "/config.txt";
 const char *JS_PATH = "/main.js";
 const char *LOGIN_PATH = "/login.html";
 const char *INIT_PATH = "/init.html";
 const char *ALERT_PATH = "/alert.html";
 const char *HTML_CONTENT = "text/html";
 const char *JS_CONTENT = "application/javascript";
+const int MAX_WIFI_INIT_ATTEMPTS = 1;
 
 uint8_t RESET_PIN = D3; //GPIO0, flash button
 
@@ -36,19 +34,7 @@ void setup()
   Serial.begin(115200);
   delay(2000);
 
-  if (SPIFFS.exists(CONFIG_PATH))
-  {
-    File config = SPIFFS.open(CONFIG_PATH, "r");
-    while (config.available())
-    {
-      String line = String(char(config.read()));
-      Serial.print(line);
-    }
-  }
-  else
-  {
-    Serial.print("config file does not exist");
-  }
+  readStoredConfig();
 
   initializeWiFi();
   const char *headerkeys[] = {"User-Agent", "Cookie"};
@@ -62,7 +48,6 @@ void setup()
   server.on("/bootstrap.min.css", handleBootstrap);
   server.on("/init", handleInit);
   server.on("/doInit", HTTP_POST, handleDoInit);
-
   // server.on("/devices.html", handleJs);
   server.on("/scheduler", HTTP_POST, handlePostScheduler);
   server.on("/scheduler", HTTP_GET, handleGetScheduler);
@@ -76,20 +61,58 @@ void initializeWiFi()
 {
   ESP.eraseConfig();
   delay(2000);
-  WiFi.mode(WIFI_AP);
-  Serial.println();
-  Serial.print("Setting soft-AP ... ");
-  Serial.println(WiFi.softAP(ssid, password) ? "Ready" : "Failed!");
-  Serial.print("IP address: ");
-  Serial.println(WiFi.softAPIP());
 
-  if (MDNS.begin("esp8266"))
+  if (WIFI_MODE == 0)
   {
-    Serial.println("mDNS responder started");
+    WiFi.mode(WIFI_AP);
+    Serial.println();
+    Serial.print("Setting soft-AP ... ");
+    Serial.println(WiFi.softAP(WIFI_SSID.c_str(), WIFI_PASS.c_str()) ? "Ready" : "Failed!");
+    Serial.print("IP address: ");
+    Serial.println(WiFi.softAPIP());
+
+    if (MDNS.begin("esp8266"))
+    {
+      Serial.println("mDNS responder started");
+    }
+    else
+    {
+      Serial.println("Error setting up MDNS responder!");
+    }
   }
   else
   {
-    Serial.println("Error setting up MDNS responder!");
+    WiFi.mode(WIFI_STA);
+    Serial.printf("Connecting to %s", WIFI_SSID.c_str());
+    WiFi.begin(WIFI_SSID.c_str(), WIFI_PASS.c_str());
+
+    int wifiInitAttempts = 0;
+    while (wifiInitAttempts < MAX_WIFI_INIT_ATTEMPTS)
+    {
+      for (int i = 0; i < 10; i++)
+      {
+        delay(500);
+        Serial.print(".");
+      }
+      if (WiFi.status() == WL_CONNECTED)
+      {
+        Serial.println(" connected");
+        Serial.print("IP address:\t");
+        Serial.println(WiFi.localIP());
+        break;
+      }
+
+      else
+      {
+        wifiInitAttempts++;
+        Serial.print("Failed to connect.");
+        if (wifiInitAttempts >= MAX_WIFI_INIT_ATTEMPTS)
+        {
+          Serial.println("Unable to connect to configured WiFi network. "); // should reset?
+          doHardReset();
+        }
+      }
+    }
   }
 }
 
@@ -106,12 +129,15 @@ void handleReset()
   {
     delay(5000);
     if (digitalRead(RESET_PIN) == 0)
-    {
-      Serial.println("Resetting...");
-      SPIFFS.remove(CONFIG_PATH);
-      ESP.reset();
-    }
+      doHardReset();
   }
+}
+
+void doHardReset()
+{
+  Serial.println("Resetting...");
+  SPIFFS.remove(CONFIG_PATH);
+  ESP.reset();
 }
 
 void logInfo()
@@ -121,7 +147,6 @@ void logInfo()
   if (stations != lastStations)
   {
     lastStations = WiFi.softAPgetStationNum();
-    ;
     Serial.printf("Stations connected = %d\n", stations);
   }
 }
@@ -156,7 +181,8 @@ void handleDoInit()
     String user = server.arg("user");
     String userPass = server.arg("user_password");
     String mode = server.arg("mode");
-    File file = SPIFFS.open("CONFIG_PATH", "w");
+    Serial.print("asdf");
+    File file = SPIFFS.open(CONFIG_PATH, "w");
     file.println(ssid);
     file.println(wifiPass);
     file.println(user);
@@ -164,12 +190,7 @@ void handleDoInit()
     file.println(mode);
     file.close();
     sendAlert("OK", "All data has been updated. Board will restart now...", "/", 5);
-
-        Serial.println(ssid.c_str());
-    Serial.println(wifiPass.c_str());
-    Serial.println(user.c_str());
-    Serial.println(userPass.c_str());
-    Serial.println(mode.c_str());
+    ESP.reset();
   }
 }
 
@@ -254,6 +275,12 @@ void handleBootstrap()
 
 void handleRoot()
 {
+  if (configPresent())
+  {
+    handleInit();
+    return;
+  }
+
   if (!checkIfAuthorized())
   {
     return;
@@ -382,7 +409,6 @@ boolean sendAlert(String header, String contents, String redirect, int delay)
     fileContents.replace("%HEADER%", header);
     fileContents.replace("%CONTENT%", contents);
 
-    Serial.println(fileContents);
     server.send(400, "text/html", fileContents);
     Serial.printf("File %s sent\n", ALERT_PATH);
     return true;
@@ -410,12 +436,4 @@ bool checkIfAuthorized()
   Serial.printf("Access denied!\n");
   sendAlert("Error", "Invalid credentials!", "/loginPage", 3);
   return false;
-}
-
-std::string toStdStr(String s)
-{
-  int str_len = s.length() + 1;
-  char char_array[str_len];
-  s.toCharArray(char_array, str_len);
-  return std::string(char_array);
 }

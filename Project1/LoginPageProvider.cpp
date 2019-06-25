@@ -55,3 +55,8 @@ std::string LoginPageProvider::getInvalidCredentialsPage() {
 std::string LoginPageProvider::getLogoutButton() {
 	return std::string("<button onclick='document.cookie = \"xxxxxx\"; window.location = \"/loginPage\";'>Logout</button>");
 }
+
+void LoginPageProvider::setCredentials(std::string user, std::string password) {
+	validUser = user;
+	validPassword = password;
+}

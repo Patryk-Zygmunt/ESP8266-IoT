@@ -1,0 +1,4 @@
+
+void readStoredConfig();
+
+boolean configPresent();
