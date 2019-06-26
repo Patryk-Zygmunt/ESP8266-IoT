@@ -247,12 +247,12 @@ void handleGetScheduler()
 
   std::vector <Task> tasks = scheduler.tasks;
 
-  for(iterator = tasks.begin(); iterator != tasks.end(); ++iterator) {
+  for(std::vector<Task>::iterator it = tasks.begin(); it != tasks.end(); ++it) {
 		JsonObject event = array.createNestedObject();
-		event["pin"] = (*iterator).pin;
-		event["thing"] = (*iterator).name;
-		event["date"] = (*iterator).executionTime;
-		event["action"] = (*iterator).status;
+		event["pin"] = String((*it).pin).c_str();
+		event["thing"] = (*it).name.c_str();
+		event["date"] = String((*it).executionTime).c_str();
+		event["action"] = String((*it).targetState).c_str();
 	}
 
   String myString;
