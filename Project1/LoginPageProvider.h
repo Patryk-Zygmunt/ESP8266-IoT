@@ -13,5 +13,6 @@ public:
 	bool isTokenValid(std::string token);
 	std::string getInvalidCredentialsPage();
 	std::string getLogoutButton();
+	void setCredentials(std::string user, std::string password);
 };
 

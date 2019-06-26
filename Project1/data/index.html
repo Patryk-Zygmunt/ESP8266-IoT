@@ -7,11 +7,9 @@
     <script src="axios.min.js"></script>
     <script src="moment.min.js"></script>
     <script src="jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <link rel="stylesheet" href="bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.min.css" crossorigin="anonymous">
 
 </head>
 <body>
@@ -26,6 +24,7 @@
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="#">Events <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="devices.html">Devices</a>
+            <a class="nav-item nav-link" href="#" onclick='document.cookie ="xxxxxx"; window.location="loginPage";''>Logout</a>
         </div>
     </div>
 </nav>
@@ -86,7 +85,7 @@
 <script>
 
     const URL = "http://localhost:3000"
-    axios.get('/scheduler' ).then(r=>insertTable(r.data))
+    axios.get( '/scheduler' ).then(r=>insertTable(r.data))
 
 </script>
 
