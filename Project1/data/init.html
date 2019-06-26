@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="axios.min.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css" crossorigin="anonymous">
+
+    <script>
+        function validatePasswords() {
+            var wifipass1 = document.getElementById("wifi_password");
+            var wifipass2 = document.getElementById("wifi_password_2");
+            var userpass1 = document.getElementById("user_password");
+            var userpass2 = document.getElementById("user_password_2")
+
+            if (wifipass1.value == wifipass2.value && userpass1.value == userpass2.value) {
+                return true;
+            } else {
+                alert("Wprowadzone hasła nie zgadzają się!");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main class="login-form" style="margin-top: 20px">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-header bg-dark text-white">Initial configuration</div>
+                                <div class="card-body">
+                                    <form action="/doInit" method="POST" onsubmit="return validatePasswords()">
+                                        <div class="form-group row">
+                                            <label for="ssid" class="col-md-4 col-form-label text-md-right">SSID</label>
+                                            <div class="col-md-6">
+                                                <input type="text" id="ssid" class="form-control" name="ssid" required
+                                                    autofocus>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="wifi_password"
+                                                class="col-md-4 col-form-label text-md-right">WiFI
+                                                password</label>
+                                            <div class="col-md-6">
+                                                <input type="password" id="wifi_password" class="form-control"
+                                                    name="wifi_password" pattern="([A-Za-z0-9]{8,}|$^)"
+                                                    title="Empty or at least 8 characters [A-Za-z0-9]">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="wifi_password_2"
+                                                class="col-md-4 col-form-label text-md-right">Repeat
+                                                WiFI password</label>
+                                            <div class="col-md-6">
+                                                <input type="password" id="wifi_password_2" class="form-control"
+                                                    name="wifi_password_2">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="user"
+                                                class="col-md-4 col-form-label text-md-right">Username</label>
+                                            <div class="col-md-6">
+                                                <input type="text" id="user" class="form-control" name="user" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="user_password"
+                                                class="col-md-4 col-form-label text-md-right">Password</label>
+                                            <div class="col-md-6">
+                                                <input type="password" id="user_password" class="form-control"
+                                                    name="user_password" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="user_password_2"
+                                                class="col-md-4 col-form-label text-md-right">Repeat
+                                                password</label>
+                                            <div class="col-md-6">
+                                                <input type="password" id="user_password_2" class="form-control"
+                                                    name="user_password_2" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label for="mode" class="col-md-4 col-form-label text-md-right">Mode</label>
+                                            <div class="col-md-6">
+                                                <select id="mode" name="mode">
+                                                    <option>Standalone AP</option>
+                                                    <option>Wifi client</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 offset-md-4">
+                                            <button type="submit" class="btn btn-primary">
+                                                Confirm
+                                            </button>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+
+
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-header bg-dark text-white">Available networks</div>
+                                <div class="card-body">
+                                    %NETWORKS%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>
