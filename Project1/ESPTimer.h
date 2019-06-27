@@ -6,16 +6,17 @@
 
 using namespace std;
 
-// extern WiFiUDP ntpUDP;
-// extern NTPClient timeClient;
 
 class ESPTimer : public ITimer
 {
 public:
     chrono::system_clock::time_point currentTime;
+    long lastMillisTime;
+    long lastLogTime;
 
     ESPTimer();
     void initializeTimer();
     void synchronizeTime();
-    virtual chrono::system_clock::time_point getTime();
+    void logTime();
+    chrono::system_clock::time_point getTime();
 };

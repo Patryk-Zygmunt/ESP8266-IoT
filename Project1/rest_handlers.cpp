@@ -8,6 +8,8 @@
 #include "utils.h"
 #include "init.h"
 #include "login_service.h"
+#include "scheduler_service.h"
+#include "Task.h"
 
 void handleDoInit()
 {
@@ -48,16 +50,19 @@ void handlePostScheduler()
     JsonObject root = doc.as<JsonObject>();
     server.send(200, HTML_CONTENT, "OK");
 
-    // Examples
-    Serial.println(server.arg("plain"));
+    // Parse task
     String pin = doc["pin"];
     String thing = doc["thing"];
     String date = doc["date"];
     String action = doc["action"];
-    Serial.println(pin.c_str());
-    Serial.println(thing.c_str());
-    Serial.println(date.c_str());
-    Serial.println(action.c_str());
+    Serial.printf("[ SERVER ] Incoming task %s:%s:%s:%s\n", pin.c_str(), thing.c_str(), date.c_str(), action.c_str());
+
+    std::chrono::system_clock::time_point tp = timePointFromString(toStdStr(date), "%Y-%m-%dT%H:%M");
+    // Task task(toStdStr(thing), tp, [&] {
+    //     Serial.printf("[  TASK  ] Executing scheduled task %s\n", thing.c_str());
+    //     // change pin state here
+    // });
+    Serial.println(timePointToString(tp).c_str());
 }
 
 void handleGetScheduler()

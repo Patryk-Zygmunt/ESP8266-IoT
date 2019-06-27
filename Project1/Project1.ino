@@ -13,9 +13,7 @@
 #include "routes.h"
 #include "static_file_handlers.h"
 #include "server.h"
-#include "ESPTimer.h"
-
-ESPTimer timer;
+#include "time_service.h"
 
 void setup()
 {
@@ -32,7 +30,7 @@ void setup()
   
   readStoredConfig();
   initializeWiFi();
-  timer.initializeTimer();
+  espTimer.initializeTimer();
   initializeWebServer();
   addRoutes();
   
@@ -46,6 +44,7 @@ void loop()
   logInfo();
   dnsServer.processNextRequest();
   server.handleClient();
+  espTimer.getTime();
 }
 
 void logInfo()
