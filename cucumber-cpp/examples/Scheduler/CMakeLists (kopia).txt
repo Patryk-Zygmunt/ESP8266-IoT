@@ -1,0 +1,12 @@
+project(Scheduler)
+
+include_directories(${CUKE_INCLUDE_DIRS} src)
+
+add_library(Scheduler src/Scheduler)
+add_library(Scheduler src/ITimer)
+add_library(Scheduler src/Task)
+
+if(GMOCK_FOUND)
+    add_executable(SchedulerSteps features/step_definitions/SchedulerSteps)
+    target_link_libraries(SchedulerSteps Scheduler ${CUKE_LIBRARIES} ${CUKE_GTEST_LIBRARIES})
+endif()
