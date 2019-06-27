@@ -13,10 +13,7 @@ public:
 	Scheduler();
 	~Scheduler();
 	void addTask(Task task);
-	bool runAvailableTasks(ITimer timer);
-	bool finalizeTask(Task task);
-	bool finalizeTask(int taskId);
-
+	void runAvailableTasks(ITimer *timer);
 };
 
 #endif

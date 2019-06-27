@@ -123,17 +123,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FakeTimer.cpp" />
     <ClCompile Include="GreetingProvider.cpp" />
     <ClCompile Include="LoginPageProvider.cpp" />
     <ClCompile Include="IPinState.cpp" />
     <ClCompile Include="PinStateMock.cpp" />
+    <ClCompile Include="Scheduler.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Task.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FakeTimer.h" />
     <ClInclude Include="GreetingProvider.h" />
+    <ClInclude Include="ITimer.h" />
     <ClInclude Include="LoginPageProvider.h" />
     <ClInclude Include="IPinState.h" />
     <ClInclude Include="PinStateMock.h" />
+    <ClInclude Include="Scheduler.h" />
+    <ClInclude Include="Task.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

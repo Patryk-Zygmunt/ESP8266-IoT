@@ -1,15 +1,11 @@
 #ifndef _TIMER_h
 #define _TIMER_h
+#include <chrono>
+
+using namespace std;
 
 class ITimer {
 public:
-	double inputTime;
-	double  offsetTime;
-	double   currentTime;
-
-	void  updateCurrentTime();
-
-	ITimer();
-	~ITimer();
+	virtual chrono::system_clock::time_point getTime() = 0;
 };
 #endif

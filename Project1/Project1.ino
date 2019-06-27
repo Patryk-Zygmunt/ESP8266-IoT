@@ -3,6 +3,9 @@
 #include <sstream>
 #include <FS.h>
 #include "ArduinoJson.h"
+#include <NTPClient.h>
+#include <ESP8266WiFi.h>
+#include <WiFiUdp.h>
 
 #include "init.h";
 #include "utils.h";
@@ -10,6 +13,9 @@
 #include "routes.h"
 #include "static_file_handlers.h"
 #include "server.h"
+#include "ESPTimer.h"
+
+ESPTimer timer;
 
 void setup()
 {
@@ -26,6 +32,7 @@ void setup()
   
   readStoredConfig();
   initializeWiFi();
+  timer.initializeTimer();
   initializeWebServer();
   addRoutes();
   

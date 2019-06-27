@@ -1,26 +1,23 @@
 #include "Task.h"
-#include "Arduino.h"
+#include <functional>
+#include <chrono>
+
+using namespace std;
 
 int Task::counter = 0;
 
-Task::Task(std::string name, int pin, double executionTime, bool targetState)
+Task::Task(string name, chrono::system_clock::time_point executionTime, function<void()> action)
 {
 	this->id = Task::counter++;
 	this->name = name;
-	this->pin = pin;
 	this->executionTime = executionTime;
-	this->targetState = targetState;
+	this->action = action;
 }
 
 Task::~Task()
 {
 }
 
-bool Task::execute() {
-
-	int pinState = digitalRead(this->pin);
-
-	digitalWrite(this->pin, this->targetState);
-
-	return this->targetState;
+void Task::execute() {
+	action();
 }

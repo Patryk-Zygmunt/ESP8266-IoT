@@ -1,21 +1,24 @@
 #ifndef _TASK_h
 #define _TASK_h
 #include <string>
+#include <functional>
+#include <chrono>
+
+using namespace std;
 
 class Task {
-	
+
 public:
 	static int counter;
 	int id;
-	int pin;
-	double executionTime;
-	bool targetState;
-	std::string name;
-	Task(std::string name, int pin, double executionTime, bool targetState);
+	string name;
+	function<void()> action;
+	chrono::system_clock::time_point executionTime;
+
+	Task(string name, chrono::system_clock::time_point executionTime, function<void()> action);
+
 	~Task();
-	bool execute();
-	
 
+	void execute();
 };
-
 #endif

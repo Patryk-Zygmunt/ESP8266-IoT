@@ -103,7 +103,7 @@ std::string getNetworksInHtml()
     for (int i = 0; i < numberOfNetworks; i++)
     {
         Serial.printf("[  WiFi  ] Network found: %s (%s dBm)\n", toStdStr(WiFi.SSID(i)).c_str(), toStdStr(String(WiFi.RSSI(i))).c_str());
-        ss << WiFi.SSID(i).c_str() << " (" << WiFi.RSSI(i) << ") <br />";
+        ss << WiFi.SSID(i).c_str() << " (" << WiFi.RSSI(i) << " dBm) <br />";
     }
     return ss.str();
 }
