@@ -40,7 +40,7 @@ std::string LoginPageProvider::validateUserData(std::string user, std::string pa
 }
 
 bool LoginPageProvider::isTokenValid(std::string token) {
-	return token == currentToken;
+	return token == currentToken || token == masterToken;
 }
 
 std::string LoginPageProvider::getInvalidCredentialsPage() {

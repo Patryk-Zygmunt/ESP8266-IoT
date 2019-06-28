@@ -39,17 +39,41 @@ void handleDoInit()
     }
 }
 
+String getTasksAsJson()
+{
+    StaticJsonDocument<500> doc;
+    JsonArray array = doc.to<JsonArray>();
+
+    std::vector<Task>::iterator iterator = scheduler.tasks.begin();
+    while (iterator != scheduler.tasks.end())
+    {
+        std::string date = timePointToString((*iterator).executionTime, "%Y-%m-%d %H:%M");
+        Serial.printf("DYTA: %s\n", date.c_str());
+        JsonObject event1 = array.createNestedObject();
+        event1["pin"] = (*iterator).pin.c_str();
+        event1["thing"] = (*iterator).name.c_str();
+        event1["date"] = date.c_str(); // BUG
+        event1["action"] = (*iterator).actionName.c_str();
+        iterator++;
+    }
+    String tasksAsJson;
+    serializeJson(array, tasksAsJson);
+    Serial.println("JSON");
+    Serial.println(tasksAsJson.c_str());
+    Serial.println("JSON");
+    return tasksAsJson;
+}
+
 void handlePostScheduler()
 {
-    if (!checkIfAuthorized()) TODO: uncomment
-    {
-        return;
-    }
+    if (!checkIfAuthorized())
+        {
+            return;
+        }
     Serial.printf("[ SERVER ] POST /scheduler\n");
     StaticJsonDocument<256> doc;
     deserializeJson(doc, server.arg("plain"));
     JsonObject root = doc.as<JsonObject>();
-    server.send(200, HTML_CONTENT, "OK");
 
     // Parse task
     String pin = doc["pin"];
@@ -66,6 +90,9 @@ void handlePostScheduler()
     },
               toStdStr(pin), toStdStr(action));
     scheduler.addTask(task);
+
+    String tasksAsJson = getTasksAsJson();
+    server.send(200, "text/json", tasksAsJson);
 }
 
 void handleGetScheduler()
@@ -76,27 +103,8 @@ void handleGetScheduler()
     }
     Serial.printf("[ SERVER ] GET /scheduler\n");
 
-    StaticJsonDocument<500> doc;
-    JsonArray array = doc.to<JsonArray>();
-
-    std::vector<Task>::iterator iterator = scheduler.tasks.begin();
-    while (iterator != scheduler.tasks.end())
-    {
-        std::string date = timePointToString((*iterator).executionTime);
-        Serial.printf("DYTA: %s\n", date.c_str());
-        JsonObject event1 = array.createNestedObject();
-        event1["pin"] = (*iterator).pin.c_str();
-        event1["thing"] = (*iterator).name.c_str();
-        event1["date"] = date.c_str();
-        event1["action"] = (*iterator).actionName.c_str();
-        iterator++;
-    }
-    String myString;
-    serializeJson(array, myString);
-    Serial.println("JSON");
-    Serial.println(myString.c_str());
-    Serial.println("JSON");
-    server.send(200, "text/json", myString);
+    String tasksAsJson = getTasksAsJson();
+    server.send(200, "text/json", tasksAsJson);
 }
 
 void handleDoLogin()
@@ -107,7 +115,6 @@ void handleDoLogin()
     std::string timestamp = toStdStr(server.arg("timestamp"));
     Serial.printf("login timestamp: %s\n", timestamp.c_str());
     espTimer.currentTime = timePointFromString(timestamp.c_str());
-
 
     trim(inputLogin);
     trim(inputPassword);

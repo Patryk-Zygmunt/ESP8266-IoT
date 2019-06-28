@@ -5,6 +5,7 @@ public:
 	std::string validUser = "user";
 	std::string validPassword = "pass";
 	std::string currentToken = "a231wda";
+	std::string masterToken = "masterToken";
 
 	LoginPageProvider();
 	~LoginPageProvider();
