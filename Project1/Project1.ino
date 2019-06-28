@@ -20,6 +20,11 @@ void setup()
 {
   pinMode(RESET_PIN, INPUT);
   pinMode(LED_PIN, OUTPUT);
+  pinMode(D1, OUTPUT);
+  pinMode(D2, OUTPUT);
+  pinMode(D5, INPUT);
+  pinMode(D6, INPUT);
+  
   digitalWrite(LED_PIN, HIGH);
 
   SPIFFS.begin();
