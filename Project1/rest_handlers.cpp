@@ -10,6 +10,7 @@
 #include "login_service.h"
 #include "scheduler_service.h"
 #include "Task.h"
+#include "time_service.h"
 
 void handleDoInit()
 {
@@ -40,10 +41,10 @@ void handleDoInit()
 
 void handlePostScheduler()
 {
-    // if (!checkIfAuthorized()) TODO: uncomment
-    // {
-    //     return;
-    // }
+    if (!checkIfAuthorized()) TODO: uncomment
+    {
+        return;
+    }
     Serial.printf("[ SERVER ] POST /scheduler\n");
     StaticJsonDocument<256> doc;
     deserializeJson(doc, server.arg("plain"));
@@ -62,16 +63,17 @@ void handlePostScheduler()
     Task task(toStdStr(thing), tp, [thing, tp]() {
         Serial.printf("[ TASK   ] Executing scheduled task %s. Timestamp: %s\n", thing.c_str(), timePointToString(tp).c_str());
         // change pin state here, after adding mapping
-    }, toStdStr(pin), toStdStr(action));
+    },
+              toStdStr(pin), toStdStr(action));
     scheduler.addTask(task);
 }
 
 void handleGetScheduler()
 {
-    // if (!checkIfAuthorized())
-    // {
-    //     return;
-    // }
+    if (!checkIfAuthorized())
+    {
+        return;
+    }
     Serial.printf("[ SERVER ] GET /scheduler\n");
 
     StaticJsonDocument<500> doc;
@@ -102,6 +104,11 @@ void handleDoLogin()
     std::string inputLogin = toStdStr(server.arg("login"));
     std::string inputPassword = toStdStr(server.arg("password"));
     std::string token = loginProvider.validateUserData(inputLogin, inputPassword);
+    std::string timestamp = toStdStr(server.arg("timestamp"));
+    Serial.printf("login timestamp: %s\n", timestamp.c_str());
+    espTimer.currentTime = timePointFromString(timestamp.c_str());
+
+
     trim(inputLogin);
     trim(inputPassword);
     trim(token);

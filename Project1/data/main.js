@@ -1,4 +1,4 @@
-
+2
 function addEvent() {
     var event = Array.from($("#add-event").serializeArray())
     console.log(event)
@@ -35,7 +35,7 @@ function createTableRow(name, pin, d, action, index) {
             <td>${name}</td>
             <td>${pin}</td>
             <td>${(d.format('DD-MM-YYYY HH:mm')).toLocaleString()}</td>
-            <td><button type="button" class="btn btn-secondary" onclick="deleteEvent('${name}','${pin}')">${action}</button></td>
+            <td>${action}</td>
     `
     frag.appendChild(temp)
     return frag;

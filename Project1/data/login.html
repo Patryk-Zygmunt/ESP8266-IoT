@@ -6,47 +6,60 @@
     <title>Title</title>
     <script src="axios.min.js"></script>
     <script src="moment.min.js"></script>
-    <script src="jquery-3.3.1.slim.min.js"
-        crossorigin="anonymous"></script>
+    <script src="jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
     <link rel="stylesheet" href="bootstrap.min.css" crossorigin="anonymous">
 
 
 </head>
-
+<script>
+        function insertCurrentDate() {
+            var today = new Date();
+            var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = date + 'T' + time;
+            document.getElementById('timestamp').value = dateTime;
+            return true;
+        }
+    </script>
 <body>
-        <main class="login-form" style="margin-top: 20px">
-                <div class="cotainer">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <div class="card">
-                                <div class="card-header bg-dark text-white">Login</div>
-                                <div class="card-body">
-                                    <form action="/doLogin" method="POST">
-                                        <div class="form-group row">
-                                            <label for="email_address" class="col-md-4 col-form-label text-md-right">User</label>
-                                            <div class="col-md-6">
-                                                <input type="text" id="login" class="form-control" name="login" required autofocus>
-                                            </div>
-                                        </div>
-            
-                                        <div class="form-group row">
-                                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
-                                            <div class="col-md-6">
-                                                <input type="password" id="password" class="form-control" name="password" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md-6 offset-md-4">
-                                            <button type="submit" class="btn btn-primary">
-                                                Login
-                                            </button>
-                                        </div>
+    <main class="login-form" style="margin-top: 20px">
+        <div class="cotainer">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">Login</div>
+                        <div class="card-body">
+                            <form action="/doLogin" method="POST">
+                                <div class="form-group row">
+                                    <label for="email_address"
+                                        class="col-md-4 col-form-label text-md-right">User</label>
+                                    <div class="col-md-6">
+                                        <input type="text" id="login" class="form-control" name="login" required
+                                            autofocus>
+                                    </div>
                                 </div>
-                                </form>
-                            </div>
+
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                    <div class="col-md-6">
+                                        <input type="password" id="password" class="form-control" name="password"
+                                            required>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 offset-md-4">
+                                    <input type="hidden" id="timestamp" name="timestamp" value="">
+                                    <button type="submit" class="btn btn-primary" onclick="insertCurrentDate()" >
+                                        Login
+                                    </button>
+                                </div>
                         </div>
+                        </form>
                     </div>
                 </div>
+            </div>
+        </div>
 </body>
+
 </html>

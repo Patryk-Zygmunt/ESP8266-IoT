@@ -24,6 +24,15 @@
                 return false;
             }
         }
+
+        function insertCurrentDate() {
+            var today = new Date();
+            var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+            var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+            var dateTime = date + 'T' + time;
+            document.getElementById('timestamp').value = dateTime;
+            return true;
+        }
     </script>
 </head>
 
@@ -106,7 +115,7 @@
                                         </div>
 
                                         <div class="col-md-6 offset-md-4">
-                                            <button type="submit" class="btn btn-primary">
+                                            <button type="submit" class="btn btn-primary" onclick="insertCurrentDate();">
                                                 Confirm
                                             </button>
                                         </div>
