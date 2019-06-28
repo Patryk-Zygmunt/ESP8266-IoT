@@ -17,3 +17,5 @@ void handleDoLogin();
 boolean sendAlert(String header, String contents, String redirect, int delay);
 
 bool checkIfAuthorized();
+
+String getTasksAsJson();
