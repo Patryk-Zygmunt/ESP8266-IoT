@@ -46,17 +46,17 @@ void readStoredConfig()
         WIFI_SSID = ssid.c_str();
         WIFI_PASS = wifiPass.c_str();
         loginProvider.setCredentials(user, userPass);
-        Serial.printf("[  INIT  ] New credentials: %s:%s\n", user.c_str(), userPass.c_str());
+        Serial.printf("[ INIT   ] New credentials: %s:%s\n", user.c_str(), userPass.c_str());
 
-        Serial.printf("[  INIT  ] Config file contents:\n"); //TODO: remove for final release
+        Serial.printf("[ INIT   ] Config file contents:\n"); //TODO: remove for final release
         Serial.println(configContents.c_str());
 
         WIFI_MODE = mode.find("AP") == std::string::npos ? 1 : 0;
-        Serial.printf("[  INIT  ] WiFi mode determined as %d (0 - ap, 1 - sta).\n", WIFI_MODE);
+        Serial.printf("[ INIT   ] WiFi mode determined as %d (0 - ap, 1 - sta).\n", WIFI_MODE);
     }
     else
     {
-        Serial.printf("[  INIT  ] Config file does not exist - starting with default config.\n");
+        Serial.printf("[ INIT   ] Config file does not exist - starting with default config.\n");
     }
 }
 
@@ -82,7 +82,7 @@ void handleReset()
 
 void doHardReset()
 {
-    Serial.println("[  INIT  ] Resetting...");
+    Serial.println("[ INIT   ] Resetting...");
     SPIFFS.remove(CONFIG_PATH);
     ESP.reset();
 }

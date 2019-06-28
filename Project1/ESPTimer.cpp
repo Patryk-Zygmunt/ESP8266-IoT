@@ -8,7 +8,7 @@ ESPTimer::ESPTimer()
 {
     this->lastMillisTime = millis();
     this->lastLogTime = millis();
-    this->currentTime = timePointFromString("Jun 27 2019 09:25:00");
+    this->currentTime = timePointFromString("Jun 27 2019 09:25:00", "%b %d %Y %H:%M:%S");
 }
 void ESPTimer::initializeTimer()
 {
@@ -36,7 +36,7 @@ void ESPTimer::logTime()
 {
     if (millis() - lastLogTime > 30000)
     {
-        Serial.printf("[  TIMER ] Time requested. Current time: %s\n", timePointToString(currentTime).c_str());
+        Serial.printf("[ TIMER  ] Time requested. Current time: %s\n", timePointToString(currentTime).c_str());
         lastLogTime = millis();
     }
 }

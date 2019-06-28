@@ -13,9 +13,11 @@ public:
 	int id;
 	string name;
 	function<void()> action;
+	string pin;
+	string actionName;
 	chrono::system_clock::time_point executionTime;
 
-	Task(string name, chrono::system_clock::time_point executionTime, function<void()> action);
+	Task(string name, chrono::system_clock::time_point executionTime, function<void()> action, string pin = "?", string actionName = "action");
 
 	~Task();
 

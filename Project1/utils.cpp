@@ -18,6 +18,7 @@ std::chrono::system_clock::time_point timePointFromString(std::string timestamp,
 {
     struct tm tm;
     strptime(timestamp.c_str(), format.c_str(), &tm);
+    tm.tm_sec = 0; // do not remove, all tm fields that are not used in format should be initialized with 0!
     time_t t = mktime(&tm);
     return std::chrono::system_clock::from_time_t(t);
 }
