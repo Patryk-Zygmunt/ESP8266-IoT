@@ -41,18 +41,17 @@ void handleDoInit()
 
 String getTasksAsJson()
 {
-    StaticJsonDocument<500> doc;
+    DynamicJsonDocument doc(1024);
     JsonArray array = doc.to<JsonArray>();
 
     std::vector<Task>::iterator iterator = scheduler.tasks.begin();
     while (iterator != scheduler.tasks.end())
     {
-        std::string date = timePointToString((*iterator).executionTime, "%Y-%m-%d %H:%M");
-        Serial.printf("DYTA: %s\n", date.c_str());
+        std::string date = timePointToString((*iterator).executionTime);
         JsonObject event1 = array.createNestedObject();
+        event1["date"] = date.c_str(); // BUG
         event1["pin"] = (*iterator).pin.c_str();
         event1["thing"] = (*iterator).name.c_str();
-        event1["date"] = date.c_str(); // BUG
         event1["action"] = (*iterator).actionName.c_str();
         iterator++;
     }
@@ -67,9 +66,9 @@ String getTasksAsJson()
 void handlePostScheduler()
 {
     if (!checkIfAuthorized())
-        {
-            return;
-        }
+    {
+        return;
+    }
     Serial.printf("[ SERVER ] POST /scheduler\n");
     StaticJsonDocument<256> doc;
     deserializeJson(doc, server.arg("plain"));
@@ -84,9 +83,11 @@ void handlePostScheduler()
 
     std::chrono::system_clock::time_point tp = timePointFromString(toStdStr(date), "%Y-%m-%dT%H:%M");
 
-    Task task(toStdStr(thing), tp, [thing, tp]() {
+    Task task(toStdStr(thing), tp, [thing, tp, pin, action]() {
         Serial.printf("[ TASK   ] Executing scheduled task %s. Timestamp: %s\n", thing.c_str(), timePointToString(tp).c_str());
-        // change pin state here, after adding mapping
+        auto ESP_PIN = toStdStr(pin).find("1") ==  std::string::npos ? D2 : D1;
+        auto ESP_STATE = toStdStr(action).find("on") == std::string::npos ? LOW : HIGH;
+        digitalWrite(ESP_PIN, ESP_STATE);
     },
               toStdStr(pin), toStdStr(action));
     scheduler.addTask(task);
